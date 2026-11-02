@@ -52,7 +52,7 @@ An asset is one vehicle or piece of equipment: "Truck 12," "the Bobcat."
 **Home → Assets → + New.** Pick the **asset type** first: a **Vehicle** asks for a **VIN**, and **Equipment** asks for a **Serial Number** instead.
 
 ### Naming an asset
-Give it a **Nickname** ("Truck 12," "Big Blue," "the Bobcat") and that's what it's called everywhere: lists, dropdowns, work orders. No nickname? It shows the **last 6 characters of the VIN** ("VIN: ...123456"). Nothing at all? **Unnamed asset**, which is your hint to give it a name.
+Give it a **Nickname** ("Truck 12," "Stella," "the Bobcat") and that's what it's called everywhere: lists, dropdowns, work orders. No nickname? It shows the **last 6 characters of the VIN** ("VIN: ...123456"). Nothing at all? **Unnamed asset**, which is your hint to give it a name.
 
 *Why nicknames:* nobody in a shop says "the one ending in 4C7". They say "Truck 12." The app should talk the way you do.
 
