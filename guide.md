@@ -21,6 +21,15 @@ Home is grouped into sections:
 
 A tile opens that list. To add something new, open its list and tap **+ New** (bottom right).
 
+### Put it on your home screen
+FleetOptima runs in your web browser, but you can **install it like an app**: it gets its own icon, opens full screen without the browser's address bar, and has its own spot when you switch between apps. It's the same FleetOptima with the same login, and it updates itself, so there's no app store and nothing to download again.
+
+**Android (Chrome):** open FleetOptima, tap the **⋮** menu (top right), then **Add to Home screen** (or **Install app**), and confirm.
+
+**iPhone (Safari):** open FleetOptima, tap the **Share** button, then **Add to Home Screen**.
+
+*Why:* without the browser's bars there's more room on screen, and nothing covers the buttons at the bottom, like the camera's shutter.
+
 ### The top bar
 - The **organization's name** on the left, so you always know which company you're in.
 - The **megaphone** sends us feedback (see below).
