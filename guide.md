@@ -32,7 +32,7 @@ A tile opens that list. To add something new, open its list and tap **+ New** (b
 - **Every page has its own web address.** For example, `/assets` is the asset list, `/assets/new` is a new asset, `/work-orders/123` is one work order, and `/parts/123/edit` edits a part. You can bookmark a page or send someone a link to it.
 - **The back button walks back one page at a time**, like any website. On the home page, the first back shows **"Press back again to exit"**, and the second one leaves the app.
 - **Opening a link to something that was deleted** (or doesn't exist) shows a **Not found** page with a button to go home.
-- **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that. We read every one.
+- **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that.
 - **You can copy any text on a details page.** Long-press it (or drag across it with a mouse) to copy a VIN, a part number or a note.
 - **Missing something in a dropdown?** Most dropdowns end with **New ...** (New Asset Type, New User, New Measuring Unit). Make it right there, and when you come back it's already picked. *Why:* so you never have to abandon a half-filled form just because one choice was missing.
 - **There's more than one way to do most things.** You can report a problem from the home page (**Quick actions → Report a Problem**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. Use whichever feels natural. They all do the same thing behind the scenes.
@@ -52,7 +52,7 @@ An asset is one vehicle or piece of equipment: "Truck 12," "the Bobcat."
 **Home → Assets → + New.** Pick the **asset type** first: a **Vehicle** asks for a **VIN**, and **Equipment** asks for a **Serial Number** instead.
 
 ### Naming an asset
-Give it a **Nickname** ("Truck 12," "Stella," "the Bobcat") and that's what it's called everywhere: lists, dropdowns, work orders. No nickname? It shows the **last 6 characters of the VIN** ("VIN: ...123456"). Nothing at all? **Unnamed asset**, which is your hint to give it a name.
+Give it a **Nickname** ("Truck 12," "Big Blue," "the Bobcat") and that's what it's called everywhere: lists, dropdowns, work orders. No nickname? It shows the **last 6 characters of the VIN** ("VIN: ...123456"). Nothing at all? **Unnamed asset**, which is your hint to give it a name.
 
 *Why nicknames:* nobody in a shop says "the one ending in 4C7". They say "Truck 12." The app should talk the way you do.
 
@@ -193,7 +193,7 @@ Some fields have a **camera** button: **VIN** (Serial Number on equipment), **mi
 
 **Mileage / hours** only picks whole numbers of 3 digits or more (with a decimal for hour meters), so the speedometer's "60" or a trip meter label won't be guessed.
 
-Nothing saves until you tap Save on the form, and the photo itself isn't kept. Tips: zoom instead of backing up, hold steady, and avoid glare. Sideways works too.
+Nothing saves until you tap Save on the form, and the photo itself isn't kept. Tips: hold steady and avoid glare. You can hold your phone upright or turned on its side, whichever fits what you're reading.
 
 ### When nobody knows what it cost
 A jug that was already on the shelf, a box from who-knows-when: leave **Cost each** blank instead of guessing. The stock is saved and usable, but marked **Cost needed**: on the part's Stock list, on its History, and on any job that used it ("+ cost needed on some" after the parts total).
