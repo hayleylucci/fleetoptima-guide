@@ -105,7 +105,7 @@ Optional. It's the code on the box (UPC). Some shops use it as their part number
 The scan button is in three places:
 - **Pull part** on a job: a known box goes straight to "how many"; a new one starts a new part.
 - **The Parts list** (barcode icon, top right): a known box opens that part; a new one opens **New Part** with the barcode filled in.
-- **The Barcode field** on New Part / Edit: fills the field. If that barcode is already on another part, the app says so and offers to open that part instead, so you don't make a duplicate. In dim light, tap the flashlight at the top.
+- **The Barcode field** on New Part / Edit: fills the field. If that barcode is already on another part, the app says so and offers to open that part instead, so you don't make a duplicate.
 - **The VIN field** on a new asset (Serial Number on equipment): scan the barcode on the **VIN sticker**. The app finds the VIN inside it (it knows the extra "I" some stickers add, and the square Data Matrix codes on newer ones), and a good VIN fills in the vehicle details just like typing it (see *Assets*). If what it read doesn't pass the VIN's check digit, it's still put in the field, with a warning to compare it to the sticker, and no details fill in. On equipment, a serial number tag is filled in exactly as scanned.
 
 ### How stock is counted: oldest first
