@@ -34,13 +34,13 @@ A tile opens that list. To add something new, open its list and tap **+ New** (b
 - **Opening a link to something that was deleted** (or doesn't exist) shows a **Not found** page with a button to go home.
 - **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that. We read every one.
 - **You can copy any text on a details page.** Long-press it (or drag across it with a mouse) to copy a VIN, a part number or a note.
-- **Missing something in a dropdown?** Most dropdowns end with **New ...** (New Asset Type, New User, New Measuring Unit). Make it right there, and when you come back it's already picked. You never lose what you'd typed on the form.
+- **Missing something in a dropdown?** Most dropdowns end with **New ...** (New Asset Type, New User, New Measuring Unit). Make it right there, and when you come back it's already picked. *Why:* so you never have to abandon a half-filled form just because one choice was missing.
 - **There's more than one way to do most things.** You can report a problem from the home page (**Quick actions → Report a Problem**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. Use whichever feels natural. They all do the same thing behind the scenes.
 
 ### Adding, changing and deleting
 - **Add:** open a list and tap **+ New** (bottom right).
 - **Change:** open the thing and tap **Edit**, then **Save**.
-- **Delete:** open it and tap **Delete**. The app asks first, because you can't undo it from the app. Deleting hides it everywhere, but its history is kept: a deleted asset's work orders and records stay on the books.
+- **Delete:** open it and tap **Delete**. The app asks first, because you can't undo it from the app. Deleting hides it everywhere, but its history is kept: a deleted asset's work orders and records stay on the books. *Why:* a truck you sold last year still had real repairs and real costs, and your totals shouldn't change because it's gone.
 
 ---
 
@@ -54,12 +54,18 @@ An asset is one vehicle or piece of equipment: "Truck 12," "the Bobcat."
 ### Naming an asset
 Give it a **Nickname** ("Truck 12," "Stella," "the Bobcat") and that's what it's called everywhere: lists, dropdowns, work orders. No nickname? It shows the **last 6 characters of the VIN** ("VIN: ...123456"). Nothing at all? **Unnamed asset**, which is your hint to give it a name.
 
+*Why nicknames:* nobody in a shop says "the one ending in 4C7". They say "Truck 12." The app should talk the way you do.
+
 ### What's on the form
 The form has two parts:
 - **The top is how it is right now:** nickname, asset type, **operator** (the person who usually runs it), and its **mileage or hours** with the unit they're counted in.
 - **Specifications are what it is:** the VIN (or serial number), make, model and year. These hardly ever change once they're filled in.
 
-The **unit** fills in from the asset type: a Vehicle counts **Miles**, and you can change it (a truck with an hour meter, say). Mileage or hours can be typed or **read off a photo of the dash** (camera button; see *Reading it off a photo*).
+*Why split it:* the things you update all the time sit on top where your thumb is, and the things you set once stay out of the way.
+
+*Why an operator:* so everyone knows who usually runs it, and who to ask when it starts making a noise.
+
+The **unit** fills in from the asset type: a Vehicle counts **Miles**, and you can change it (a truck with an hour meter, say). *Why units matter:* maintenance runs on them. "Every 3,000 miles" and "every 250 hours" only work if the app knows which one this machine counts. Mileage or hours can be typed or **read off a photo of the dash** (camera button; see *Reading it off a photo*).
 
 ### The VIN fills in the rest
 Enter the VIN any of three ways:
@@ -69,7 +75,7 @@ Enter the VIN any of three ways:
 
 Once there's a VIN that passes its **check digit** (a built-in math check every North American VIN has), FleetOptima looks it up with **NHTSA**, the US government's vehicle database, and fills in the make, model, year and more. **VIN settings** (Org settings) decide which of those details sit on the form; the rest go into the **Extra Data** card, so nothing is thrown away. Anything you already typed is never overwritten.
 
-**The Extra Data card** holds everything else the VIN lookup found (engine, body style, plant...). You can edit any of it, and your edits stick: looking the VIN up again doesn't overwrite them.
+**The Extra Data card** holds everything else the VIN lookup found (engine, body style, plant...). You can edit any of it, and your edits stick: looking the VIN up again doesn't overwrite them. *Why keep it all:* you don't need engine size today, but the day you're ordering a part, it's already there.
 
 A VIN that fails the check digit doesn't look anything up. Compare it with the plate. Serial numbers on equipment are saved as entered (in capitals).
 
@@ -78,6 +84,8 @@ A VIN that fails the check digit doesn't look anything up. Compare it with the p
 - **Name**
 - **Default measuring unit**: what new assets of this type count in (Vehicle → Miles, Equipment → Hours).
 - **Identifier label**: what the ID number is called on the form, like **VIN** or **Serial Number**.
+
+*Why asset types:* they're presets. Pick "Equipment" and the form already knows it counts hours and asks for a serial number, so you're not setting the same things on every machine. Make a type for anything you have a lot of.
 
 ---
 
@@ -92,8 +100,10 @@ A VIN that fails the check digit doesn't look anything up. Compare it with the p
 
 Everyone only ever sees their own company's assets, jobs, parts and people.
 
+*Why roles:* so the person reporting a flat tire can't accidentally delete a coworker's account or change company settings. Give Admin to whoever runs the shop.
+
 ### VIN settings (Admins)
-**Account menu → Org settings → VIN settings.** Tick which details from a VIN lookup sit on the asset form. The ones that are on are listed first; the rest (there are over a hundred) are under **More fields**. Anything left off still goes into the **Extra Data** card, so nothing is lost.
+**Account menu → Org settings → VIN settings.** Tick which details from a VIN lookup sit on the asset form. The ones that are on are listed first; the rest (there are over a hundred) are under **More fields**. Anything left off still goes into the **Extra Data** card, so nothing is lost. *Why:* a VIN lookup returns a lot. A plumbing company might care about towing capacity and never about airbags. Keep the form to what *your* people actually look at.
 
 ---
 
