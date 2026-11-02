@@ -17,9 +17,9 @@ Log in with the username and password your company's Admin gave you (press **Ent
 Home is grouped into sections:
 - **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **New Work Order**.
 - **Fleet**: **Assets**, **Work Orders** and **Parts**.
-- **Admin**: **Users** and **Asset Types**.
+- **Admin**: **Users**, **Groups** and **Asset Types**.
 
-A tile opens that list. To add something new, open its list and tap **+ New** (bottom right).
+You only see the tiles your groups let you use (see **Groups and permissions**). A tile opens that list. To add something new, open its list and tap **+ New** (bottom right).
 
 ### Put it on your home screen
 FleetOptima runs in your web browser, but you can **install it like an app**: it gets its own icon, opens full screen without the browser's address bar, and has its own spot when you switch between apps. It's the same FleetOptima with the same login, and it updates itself, so there's no app store and nothing to download again.
@@ -33,7 +33,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 ### The top bar
 - The **?** opens this guide at the part about the page you're on.
 - The **megaphone** sends us feedback (see below).
-- **Your initial** in a circle opens the **account menu**: your name and role, **App settings**, **Org settings** (Admins only: VIN settings), **Help** and **Log out**.
+- **Your initial** in a circle opens the **account menu**: your name and role, **App settings**, **Org settings** (VIN settings, for anyone allowed to change Settings), **Help** and **Log out**.
 - **App settings** picks the look: light, dark, or whatever your phone or computer is set to.
 
 ### Everywhere
@@ -103,15 +103,92 @@ A VIN that fails the check digit doesn't look anything up. Compare it with the p
 **Home → Users** lists everyone in your company. Each person has a **role**:
 | Role | Can |
 |---|---|
-| **User** | Use the app day to day: assets, work orders, parts. |
-| **Admin** | Everything a User can, plus adding and removing people (including other Admins) and **Org settings**. |
+| **User** | Whatever their **groups** allow (see **Groups and permissions** below). |
+| **Admin** | Everything, whatever their groups. |
 
-Everyone only ever sees their own company's assets, jobs, parts and people.
+Everyone only ever sees their own company's assets, jobs, parts and people. Tap a person to see when they last logged in.
 
-*Why roles:* so the person reporting a flat tire can't accidentally delete a coworker's account or change company settings. Give Admin to whoever runs the shop.
+*Why:* so the person reporting a flat tire can't accidentally delete a coworker's account or change company settings. Give Admin to whoever runs the shop, and groups to everyone else.
 
-### VIN settings (Admins)
+### VIN settings
 **Account menu → Org settings → VIN settings.** Tick which details from a VIN lookup sit on the asset form. The ones that are on are listed first; the rest (there are over a hundred) are under **More fields**. Anything left off still goes into the **Extra Data** card, so nothing is lost. *Why:* a VIN lookup returns a lot. A plumbing company might care about towing capacity and never about airbags. Keep the form to what *your* people actually look at.
+
+## Groups and permissions
+What each person can see and do comes from their **groups**. A group is a set of things people can do, like "Mechanic" or "Operator". Put someone in a group and they can do what it allows.
+
+### The short version
+- **Everyone is in one or more groups.** Each group says what its people can do.
+- **More groups = more they can do.** Groups only ever *add*. Nothing in one group takes away what another gives.
+- **Admins can do everything**, whatever their groups.
+- **Someone in no group can't see or do anything yet.** Home is empty for them until you add them to one.
+- **Changes take effect right away.** No logging out needed. Their Home catches up the next time they open the app.
+
+*Why it works this way:* it's how Linux does it, and it's the simplest system anyone's come up with. Because groups only add, you never have to figure out *why* someone can't do something. You just look at what their groups give them.
+
+### The groups you start with
+Every company starts with these three. Change them, rename them, or make your own.
+
+| Group | Can |
+|---|---|
+| **Admin** | Everything. |
+| **Mechanic** | Assets, work orders and parts: view, add and edit (not delete). Pull and return parts, see costs, add mileage. |
+| **Operator** | See the trucks, report a problem (a new work order) and add mileage. Sees only the work orders they reported. No parts. |
+
+### View, Add, Edit, Delete
+Each thing in FleetOptima (assets, work orders, parts...) has four boxes, from least to most power:
+- **View**: see the list and open things.
+- **Add**: make new ones. **Add without View** means they only see what *they* added. That's how an Operator reports problems and checks on their own reports without seeing everyone else's.
+- **Edit**: change them. For work orders, that includes starting and completing a job.
+- **Delete**: remove them.
+
+**Edit and Delete need View.** They stay greyed out until View is on, and turning View off clears them. *Why:* you can't fix what you can't see.
+
+You only see the buttons you can use. Without Delete there's no Delete button; without Edit on work orders there's no Start or Complete.
+
+### What each row covers
+| Row | What it unlocks |
+|---|---|
+| **Assets** | The trucks and equipment, their history and maintenance. |
+| **Work Orders** | Jobs, their notes, starting and completing them. |
+| **Parts** | The parts list, restocking, counting, setting a batch's cost. |
+| **Pulling & returning parts** | Taking parts for a job (or Use or toss), and putting them back. |
+| **Costs** | Seeing prices and what jobs cost. **Without it, prices are blank everywhere**: parts, batches, a job's parts total. |
+| **Mileage** | Adding a mileage reading. |
+| **Asset Types** | The kinds of assets and their measuring units. |
+| **Users** | People: adding, changing, removing, and their groups. |
+| **Groups** | Making and changing groups. |
+| **Settings** | **Org settings** (VIN settings) in the account menu. |
+
+A brand-new feature starts **off** for everyone but Admins, until you tick it for a group. *Why:* nothing new shows up in front of your people by surprise.
+
+### Putting someone in a group
+**Users → the person → Groups & permissions.**
+- Their groups show as **chips** (`MECHANIC ×`). Tap the **×** to take them out of one, or **Add group** to put them in another.
+- Tap **Save**. It takes effect right away.
+
+Making someone an **Admin** (their role, on Edit) adds the Admin chip too, so what you see matches what they can do.
+
+### Extra powers for one person (Advanced)
+Want one mechanic to also delete parts, without making a whole new group? On their **Groups & permissions** page, open **Advanced permissions** and tick it for just them.
+- Boxes their groups already give are **checked and greyed out**. Hold one to see which group gives it ("Granted by Mechanic").
+- To take away a greyed box, take them out of that group, or change the group.
+
+*Why:* so you don't end up with a group called "Pops Special Access" for every exception.
+
+### Changing a group
+**Home → Groups** lists each group, how many people are in it, and what it can do in plain words.
+- Tap one to change its boxes or rename it, then **Save**. Everyone in it gets the change right away.
+- **+ New** makes a group (like "Lead Mechanics": put your leads in both Mechanic and Lead Mechanics).
+- **Delete this group** asks first and tells you how many people lose what it gives. Their other groups stay.
+
+### The safety rules
+- **Every company keeps at least one Admin.** You can't remove or demote the last one.
+- **Only an Admin can change or remove an Admin.**
+- **Nobody hands out more than they have.** Someone who manages users (but isn't an Admin) can only give the powers they have themselves.
+- **Nobody but an Admin changes their own permissions.**
+- **Ten wrong passwords in a row locks an account for 15 minutes.**
+
+*Why:* so a shop can let a manager handle people without risking anyone locking the company out of its own app.
 
 ---
 
@@ -226,6 +303,12 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "The server is waking up, hang tight." | First visit in a while. Give it up to a minute. |
 | "Can't reach the server right now." | Check your internet, then try again. |
 | "Your session expired. Please log in again." | You've been logged in a long time. Log in again and carry on. |
-| "You don't have permission to do that." | Your role can't do this (for example, only Admins add people). Ask your Admin. |
+| "You don't have permission to do that." | Your groups don't allow this. Ask your Admin (see **Groups and permissions**). |
+| "Error 108: Too many wrong passwords..." | Ten wrong tries in a row. Wait 15 minutes, or ask your Admin. |
+| "Error 212: Every organization needs at least one admin." | That's the last Admin. Make someone else an Admin first. |
+| "Error 213: You can't give permissions you don't have yourself." | Ask an Admin to do it. |
+| "Error 214: You can't change your own permissions." | Ask an Admin. |
+| "Error 215: A group with this name already exists." | Pick another name. |
+| "Error 216: Only an admin can change an admin." | Ask an Admin. |
 | "That doesn't exist anymore." | Someone deleted it. |
 
