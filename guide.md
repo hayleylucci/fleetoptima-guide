@@ -169,7 +169,7 @@ The scan button is in three places:
 ### How stock is counted: oldest first
 Every time stock comes in, it's kept as its own batch with **its own price**. When parts are used, the **oldest batch is used first** (first in, first out).
 
-Why: prices change. If you bought 5 quarts at $6 and later 5 at $7, a job that uses 7 quarts is charged **5 × $6 + 2 × $7 = $44**, which is what that oil actually cost. FleetOptima never averages prices.
+Why: prices change. If you bought 5 quarts at $6 and later 5 at $7, a job that uses 7 quarts is charged **(5 × $6) + (2 × $7) = $44**, which is what that oil actually cost. FleetOptima never averages prices.
 
 ### The buttons on a part
 | Button | What it does |
