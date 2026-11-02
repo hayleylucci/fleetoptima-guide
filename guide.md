@@ -126,7 +126,7 @@ You can't change the quantity by editing the part. Use Restock, Count or Use or 
 
 ### Reading it off a photo (no barcode)
 Some fields have a **camera** button: **VIN** (Serial Number on equipment), **mileage / hours**, and **part number**. Use it when there's no barcode, like a VIN plate behind the windshield, your dashboard, or a label on the old part.
-1. Tap the camera. Use **1x / 2x / 3x** to zoom in until the number fills the screen (what you see is what gets read), then take the photo. Dashboard numbers made of little light bars read much better big.
+1. Tap the camera. Use **1x / 2x / 3x** to zoom in until the number fills the screen (what you see is what gets read), then take the photo. Digital dashboard numbers read much better big.
 2. The photo comes back with a **box around every bit of text** the app found, each with a little **tag showing what it read**. Compare the tag with the real thing underneath.
 3. The app's best guess is **green, thick, with a check mark**. Everything else is red. Tap a different box (or its name in the list below) if the guess is wrong.
 4. If one character is off, fix it in the box at the bottom. Then tap **Use ...**.
@@ -135,7 +135,7 @@ Some fields have a **camera** button: **VIN** (Serial Number on equipment), **mi
 
 **Mileage / hours** only picks whole numbers of 3 digits or more (with a decimal for hour meters), so the speedometer's "60" or a trip meter label won't be guessed.
 
-Nothing saves until you tap Save on the form, and the photo itself isn't kept. Tips: zoom instead of backing up, hold steady, and avoid glare. Sideways works too. The door-jamb sticker reads better than the windshield plate.
+Nothing saves until you tap Save on the form, and the photo itself isn't kept. Tips: zoom instead of backing up, hold steady, and avoid glare. Sideways works too.
 
 ### When nobody knows what it cost
 A jug that was already on the shelf, a box from who-knows-when: leave **Cost each** blank instead of guessing. The stock is saved and usable, but marked **Cost needed**: on the part's Stock list, on its History, and on any job that used it ("+ cost needed on some" after the parts total).
