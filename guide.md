@@ -15,7 +15,7 @@ Log in with the username and password your company's Admin gave you (press **Ent
 
 ### Home
 Home is grouped into sections:
-- **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **Report a Problem**.
+- **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **New Work Order**.
 - **Fleet**: **Assets**, **Work Orders** and **Parts**.
 - **Admin**: **Users** and **Asset Types**.
 
@@ -31,9 +31,8 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 *Why:* without the browser's bars there's more room on screen, and nothing covers the buttons at the bottom, like the camera's shutter.
 
 ### The top bar
-- The **organization's name** on the left, so you always know which company you're in.
-- The **megaphone** sends us feedback (see below).
 - The **?** opens this guide at the part about the page you're on.
+- The **megaphone** sends us feedback (see below).
 - **Your initial** in a circle opens the **account menu**: your name and role, **App settings**, **Org settings** (Admins only: VIN settings), **Help** and **Log out**.
 - **App settings** picks the look: light, dark, or whatever your phone or computer is set to.
 
@@ -44,7 +43,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 - **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that.
 - **You can copy any text on a details page.** Long-press it (or drag across it with a mouse) to copy a VIN, a part number or a note.
 - **Missing something in a dropdown?** Most dropdowns end with **New ...** (New Asset Type, New User, New Measuring Unit). Make it right there, and when you come back it's already picked. *Why:* so you never have to abandon a half-filled form just because one choice was missing.
-- **There's more than one way to do most things.** You can report a problem from the home page (**Quick actions → Report a Problem**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. Use whichever feels natural. They all do the same thing behind the scenes.
+- **There's more than one way to do most things.** You can start a work order from the home page (**Quick actions → New Work Order**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. Use whichever feels natural. They all do the same thing behind the scenes.
 
 ### Adding, changing and deleting
 - **Add:** open a list and tap **+ New** (bottom right).
@@ -121,7 +120,7 @@ Everyone only ever sees their own company's assets, jobs, parts and people.
 A work order is one job on one asset: "brakes squealing on Truck 12."
 
 ### Reporting a problem
-**Home → Report a Problem** (under Quick actions). Pick the asset, say what's wrong, and add any details. Operators, mechanics and owners can all do this. You can also start from the asset itself: open the asset and tap **Create Work Order** (the asset is already filled in).
+**Home → New Work Order** (under Quick actions). Pick the asset, say what's wrong, and add any details. Operators, mechanics and owners can all do this. You can also start from the asset itself: open the asset and tap **Create Work Order** (the asset is already filled in).
 
 ### Where a job is (its status)
 | Status | Meaning |
