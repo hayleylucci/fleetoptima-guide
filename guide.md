@@ -46,7 +46,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 ### The top bar
 - The **?** opens this guide at the part about the page you're on.
 - The **megaphone** sends us feedback (see below).
-- **Your initial** in a circle opens the **account menu**: your name and role, **Change password**, **App settings**, **Org settings** (VIN settings, for anyone allowed to change Settings), **Help** and **Log out**.
+- **Your initial** in a circle opens the **account menu**: your name and role, **Account settings** (change your password, delete your account), **App settings**, **Org settings** (VIN settings, for anyone allowed to change Settings), **Help** and **Log out**.
 - **App settings** picks the look: light, dark, or whatever your phone or computer is set to.
 
 ### Everywhere
@@ -138,9 +138,9 @@ Everyone only ever sees their own company's assets, jobs, parts and people. Tap 
 Open their user and tap **Reset password**. You get a link and a QR code, same as an invite (emailed too, if you want). Their old password keeps working until they use the link, which works once and lasts **24 hours**. You can also tap **Invite** on anyone who never finished setting up.
 
 ### Your account
-**Account menu → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there.
+**Account menu → Account settings → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there.
 
-**Delete my account** is at the bottom of the same page. It asks for your password, and you can't log in again afterward. Your work orders and history stay with the company. **If you're your company's only Admin, deleting your account deletes the company too**: everyone in it loses access. FleetOptima warns you and makes you tick a box first. *Why:* a company with nobody in charge can't add people, change settings or fix anything. Make someone else an Admin first if the company should keep going without you.
+**Delete account** (the red button on the same page) asks if you're sure and for your password, and you can't log in again afterward. Your work orders and history stay with the company. **If you're your company's only Admin, deleting your account deletes the company too**: everyone in it loses access. FleetOptima warns you and makes you tick a box first. *Why:* a company with nobody in charge can't add people, change settings or fix anything. Make someone else an Admin first if the company should keep going without you.
 
 **Passwords** need at least 6 characters, with an uppercase letter, a lowercase letter, a number and a symbol.
 
