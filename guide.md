@@ -9,9 +9,22 @@ Each section says what a feature does and why it works that way.
 ## Getting around
 
 ### Logging in
-Log in with the username and password your company's Admin gave you (press **Enter** or tap the button).
+Log in with your **username or your email**, and your password (press **Enter** or tap the button).
+
+- **New here?** If your company already uses FleetOptima, your Admin adds you and you get an **invite** (see **Adding someone** below). If you're setting FleetOptima up for your own company, tap **New here? Start free** under the Login button.
+- **Forgot your password?** Tap **Forgot password?**, type your username or email, and we'll email you a link to pick a new one. The link works once and lasts an hour. Your old password keeps working until you use it, so if you didn't ask for it, just ignore the email.
+- **No email on your account?** Ask your Admin to tap **Reset password** on your user. They'll get a link or a QR code for you.
 
 **The first load can take up to a minute.** When nobody has used FleetOptima for a while, the server rests, and the first visit wakes it up. You'll see **"The server is waking up, hang tight."** That's normal; after that it's quick.
+
+### Starting free (signing up your company)
+**Login → New here? Start free.** Type your business name, your name, a username, your email and a password. We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
+
+- FleetOptima is in **free beta**: no card, no end date. We'll give you **30 days' notice** before billing ever starts.
+- A free account holds up to **10 assets**. Need more? Get in touch.
+- **Didn't get the email?** Check spam, then try logging in: you'll see **Resend** for a new link.
+
+*Why the email check:* so nobody can sign up with someone else's address.
 
 ### Home
 Home is grouped into sections:
@@ -33,12 +46,13 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 ### The top bar
 - The **?** opens this guide at the part about the page you're on.
 - The **megaphone** sends us feedback (see below).
-- **Your initial** in a circle opens the **account menu**: your name and role, **App settings**, **Org settings** (VIN settings, for anyone allowed to change Settings), **Help** and **Log out**.
+- **Your initial** in a circle opens the **account menu**: your name and role, **Change password**, **App settings**, **Org settings** (VIN settings, for anyone allowed to change Settings), **Help** and **Log out**.
 - **App settings** picks the look: light, dark, or whatever your phone or computer is set to.
 
 ### Everywhere
 - **Every page has its own web address.** For example, `/assets` is the asset list, `/assets/new` is a new asset, `/work-orders/123` is one work order, and `/parts/123/edit` edits a part. You can bookmark a page or send someone a link to it.
 - **The back button walks back one page at a time**, like any website. On the home page, the first back shows **"Press back again to exit"**, and the second one leaves the app.
+- **"A new version of FleetOptima is ready."** When we update FleetOptima while you have it open, a thin bar shows across the top. Tap **Reload** to get the new version (anything you already saved is safe), or **Later** to finish what you're doing first. *Why:* an open page keeps running the old version until it reloads, and old and new don't always get along.
 - **Opening a link to something that was deleted** (or doesn't exist) shows a **Not found** page with a button to go home.
 - **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that.
 - **You can copy any text on a details page.** Long-press it (or drag across it with a mouse) to copy a VIN, a part number or a note.
@@ -109,6 +123,26 @@ A VIN that fails the check digit doesn't look anything up. Compare it with the p
 Everyone only ever sees their own company's assets, jobs, parts and people. Tap a person to see when they last logged in.
 
 *Why:* so the person reporting a flat tire can't accidentally delete a coworker's account or change company settings. Give Admin to whoever runs the shop, and groups to everyone else.
+
+### Adding someone
+**Home → Users → + New.** Fill in their **Name**, a **Username** (what they log in with), their **Email** (optional), their **Role** and their **Group**. Then pick **How will they sign in?**
+
+- **Send an invite** (the usual way): no password from you. After you save, an invite pops up with a **QR code** and a **Copy link** button, and if they have an email, it's emailed to them too. They open it, check their name and username (you can leave the username blank and let them pick), choose a password, and they're in. The invite works once and lasts **7 days**. Making a new one cancels the old one.
+- **I'll set their password:** a password box shows. Type one and tell them yourself.
+
+**No email?** That's fine. Show them the QR code on your phone and they scan it with their own phone's camera, or text them the link.
+
+**Each email can only be on one account**, and every username is unique. *Why:* so email login and Forgot password always mean exactly one person, and nobody else's inbox can open your reset link.
+
+### When someone can't get in
+Open their user and tap **Reset password**. You get a link and a QR code, same as an invite (emailed too, if you want). Their old password keeps working until they use the link, which works once and lasts **24 hours**. You can also tap **Invite** on anyone who never finished setting up.
+
+### Your account
+**Account menu → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there.
+
+**Delete my account** is at the bottom of the same page. It asks for your password, and you can't log in again afterward. Your work orders and history stay with the company. **If you're your company's only Admin, deleting your account deletes the company too**: everyone in it loses access. FleetOptima warns you and makes you tick a box first. *Why:* a company with nobody in charge can't add people, change settings or fix anything. Make someone else an Admin first if the company should keep going without you.
+
+**Passwords** need at least 6 characters, with an uppercase letter, a lowercase letter, a number and a symbol.
 
 ### VIN settings
 **Account menu → Org settings → VIN settings.** Tick which details from a VIN lookup sit on the asset form. The ones that are on are listed first; the rest (there are over a hundred) are under **More fields**. Anything left off still goes into the **Extra Data** card, so nothing is lost. *Why:* a VIN lookup returns a lot. A plumbing company might care about towing capacity and never about airbags. Keep the form to what *your* people actually look at.
@@ -305,6 +339,14 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "Your session expired. Please log in again." | You've been logged in a long time. Log in again and carry on. |
 | "You don't have permission to do that." | Your groups don't allow this. Ask your Admin (see **Groups and permissions**). |
 | "Error 108: Too many wrong passwords..." | Ten wrong tries in a row. Wait 15 minutes, or ask your Admin. |
+| "That link has expired or was already used." | Invite and reset links work once and run out. Ask for a new one (or use **Forgot password**). |
+| "That password isn't strong enough." | At least 6 characters, with an uppercase letter, a lowercase letter, a number and a symbol. |
+| "Check your email: verify your address before logging in." | Open the link we emailed when you signed up. Tap **Resend** if you can't find it. |
+| "Your current password isn't right." | Type the password you log in with now (or use **Forgot password**). |
+| "This account was deleted." | That account was deleted. Your Admin can add you again. |
+| "Error 206: Can not add asset. Fleet size limit reached." | Your company is at its asset limit. Retire one you don't use, or get in touch for more. |
+| "Error 208: A user with this username already exists." | Usernames are unique. Pick another. |
+| "Error 219: An account with that email already exists." | That email is already on an account. Try **Forgot password**, or use another email. |
 | "Error 212: Every organization needs at least one admin." | That's the last Admin. Make someone else an Admin first. |
 | "Error 213: You can't give permissions you don't have yourself." | Ask an Admin to do it. |
 | "Error 214: You can't change your own permissions." | Ask an Admin. |
