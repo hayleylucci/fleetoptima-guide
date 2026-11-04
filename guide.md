@@ -29,7 +29,7 @@ Log in with your **username or your email**, and your password (press **Enter** 
 ### Home
 Home is grouped into sections:
 - **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **New Work Order**.
-- **Fleet**: **Assets**, **Work Orders** and **Parts**.
+- **Fleet**: **Assets**, **Work Orders**, **Parts** and **Costs** (Costs only for people allowed to see prices).
 - **Admin**: **Users**, **Groups** and **Asset Types**.
 
 You only see the tiles your groups let you use (see **Groups and permissions**). A tile opens that list. To add something new, open its list and tap **+ New** (bottom right).
@@ -57,7 +57,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 - **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that.
 - **You can copy any text on a details page.** Long-press it (or drag across it with a mouse) to copy a VIN, a part number or a note.
 - **Missing something in a dropdown?** Most dropdowns end with **New ...** (New Asset Type, New User, New Measuring Unit). Make it right there, and when you come back it's already picked. *Why:* so you never have to abandon a half-filled form just because one choice was missing.
-- **There's more than one way to do most things.** You can start a work order from the home page (**Quick actions → New Work Order**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. Use whichever feels natural. They all do the same thing behind the scenes.
+- **There's more than one way to do most things.** You can start a work order from the home page (**Quick actions → New Work Order**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. You can log a reading from the asset's **Readings**, or when you complete a job. Use whichever feels natural. They all do the same thing behind the scenes.
 
 ### Adding, changing and deleting
 - **Add:** open a list and tap **+ New** (bottom right).
@@ -78,6 +78,23 @@ Give it a **Nickname** ("Truck 12," "Stella," "the Bobcat") and that's what it's
 
 *Why nicknames:* nobody in a shop says "the one ending in 4C7". They say "Truck 12." The app should talk the way you do.
 
+### The asset's page
+Open an asset and the **essentials** are on top: name, type, operator, reading. Under them are **headers you tap to slide open**:
+- **More details**: everything else saved on it (the rest of the VIN lookup, see below).
+- **Maintenance**: its maintenance rules, and what's coming up or due (see **Maintenance**).
+- **Work orders**: this asset's jobs, newest first. Tap one to open it.
+- **Readings**: its current miles or hours, and **Log reading**.
+- **Costs**: what its parts cost over the last 6 months, per mile or hour (only if you can see costs).
+
+A header starts closed and doesn't load anything until you open it. Tap it again to close it.
+
+*Why:* an asset collects a lot over the years. The things you check every day stay on top, and the rest is one tap away instead of a long scroll.
+
+### Logging a reading
+**The asset → Readings → Log reading.** Type what the odometer or hour meter says now. Readings only go up, so the app stops you if the number is lower than the last one. You can also log one when you **complete a job** (the app asks).
+
+*Why it matters:* maintenance that runs on miles or hours (see **Maintenance**) only knows a truck is due if someone tells it the reading. Costs per mile and per hour come from readings too.
+
 ### What's on the form
 The form has two parts:
 - **The top is how it is right now:** nickname, asset type, **operator** (the person who usually runs it), and its **mileage or hours** with the unit they're counted in.
@@ -95,9 +112,9 @@ Enter the VIN any of three ways:
 - **Scan the barcode** (barcode button in the field) on the VIN sticker. That sticker is usually on the front door jamb. Work vans and trucks tend to have one; many cars don't.
 - **Read it off a photo** (camera button) of the VIN plate at the bottom of the windshield. See *Reading it off a photo* below.
 
-Once there's a VIN that passes its **check digit** (a built-in math check every North American VIN has), FleetOptima looks it up with **NHTSA**, the US government's vehicle database, and fills in the make, model, year and more. **VIN settings** (Org settings) decide which of those details sit on the form; the rest go into the **Extra Data** card, so nothing is thrown away. Anything you already typed is never overwritten.
+Once there's a VIN that passes its **check digit** (a built-in math check every North American VIN has), FleetOptima looks it up with **NHTSA**, the US government's vehicle database, and fills in the make, model, year and more. **VIN settings** (Org settings) decide which of those details sit on the form; the rest go into **More details**, so nothing is thrown away. Anything you already typed is never overwritten.
 
-**The Extra Data card** holds everything else the VIN lookup found (engine, body style, plant...). You can edit any of it, and your edits stick: looking the VIN up again doesn't overwrite them. *Why keep it all:* you don't need engine size today, but the day you're ordering a part, it's already there.
+**More details** holds everything else the VIN lookup found (engine, body style, plant...). You can edit any of it, and your edits stick: looking the VIN up again doesn't overwrite them. *Why keep it all:* you don't need engine size today, but the day you're ordering a part, it's already there.
 
 A VIN that fails the check digit doesn't look anything up. Compare it with the plate. Serial numbers on equipment are saved as entered (in capitals).
 
@@ -145,7 +162,7 @@ Open their user and tap **Reset password**. You get a link and a QR code, same a
 **Passwords** need at least 6 characters, with an uppercase letter, a lowercase letter, a number and a symbol.
 
 ### VIN settings
-**Account menu → Org settings → VIN settings.** Tick which details from a VIN lookup sit on the asset form. The ones that are on are listed first; the rest (there are over a hundred) are under **More fields**. Anything left off still goes into the **Extra Data** card, so nothing is lost. *Why:* a VIN lookup returns a lot. A plumbing company might care about towing capacity and never about airbags. Keep the form to what *your* people actually look at.
+**Account menu → Org settings → VIN settings.** Tick which details from a VIN lookup sit on the asset form. The ones that are on are listed first; the rest (there are over a hundred) are under **More fields**. Anything left off still goes into **More details**, so nothing is lost. *Why:* a VIN lookup returns a lot. A plumbing company might care about towing capacity and never about airbags. Keep the form to what *your* people actually look at.
 
 ## Groups and permissions
 What each person can see and do comes from their **groups**. A group is a set of things people can do, like "Mechanic" or "Operator". Put someone in a group and they can do what it allows.
@@ -165,8 +182,8 @@ Every company starts with these three. Change them, rename them, or make your ow
 | Group | Can |
 |---|---|
 | **Admin** | Everything. |
-| **Mechanic** | Assets, work orders and parts: view, add and edit (not delete). Pull and return parts, see costs, add mileage. |
-| **Operator** | See the trucks, report a problem (a new work order) and add mileage. Sees only the work orders they reported. No parts. |
+| **Mechanic** | Assets, work orders and parts: view, add and edit (not delete). Pull and return parts, see costs, log readings. See what maintenance is due and say when it was done (not set up rules). |
+| **Operator** | See the trucks, report a problem (a new work order) and log readings. Sees only the work orders they reported. No parts. |
 
 ### View, Add, Edit, Delete
 Each thing in FleetOptima (assets, work orders, parts...) has four boxes, from least to most power:
@@ -187,13 +204,15 @@ You only see the buttons you can use. Without Delete there's no Delete button; w
 | **Parts** | The parts list, restocking, counting, setting a batch's cost. |
 | **Pulling & returning parts** | Taking parts for a job (or Use or toss), and putting them back. |
 | **Costs** | Seeing prices and what jobs cost. **Without it, prices are blank everywhere**: parts, batches, a job's parts total. |
-| **Mileage** | Adding a mileage reading. |
+| **Mileage** | Logging a reading (miles, hours, whatever the asset counts). |
+| **Maintenance (what's due)** | Seeing an asset's maintenance and what's due (View); saying when it was really done, and turning a rule off for one asset (Edit). |
+| **Maintenance rules** | Setting up the rules themselves: adding, changing (for all, or one asset's own interval) and removing them. |
 | **Asset Types** | The kinds of assets and their measuring units. |
 | **Users** | People: adding, changing, removing, and their groups. |
 | **Groups** | Making and changing groups. |
 | **Settings** | **Org settings** (VIN settings) in the account menu. |
 
-A brand-new feature starts **off** for everyone but Admins, until you tick it for a group. *Why:* nothing new shows up in front of your people by surprise.
+A brand-new feature starts **off** for everyone but Admins, until you tick it for a group. (Companies that start after a feature exists get sensible defaults: new companies' Mechanics can see maintenance and log it done.) *Why:* nothing new shows up in front of your people by surprise.
 
 ### Putting someone in a group
 **Users → the person → Groups & permissions.**
@@ -230,8 +249,13 @@ Want one mechanic to also delete parts, without making a whole new group? On the
 
 A work order is one job on one asset: "brakes squealing on Truck 12."
 
+### The list
+**Home → Work Orders.** Jobs still to do (**Open jobs**) are on top, newest first. Finished and cancelled ones are tucked into **History** at the bottom: tap it to slide it open.
+
 ### Reporting a problem
-**Home → New Work Order** (under Quick actions). Pick the asset, say what's wrong, and add any details. Operators, mechanics and owners can all do this. You can also start from the asset itself: open the asset and tap **Create Work Order** (the asset is already filled in).
+**Home → New Work Order** (under Quick actions). Pick the asset, say what's wrong, and add any details.
+
+As you type **What's wrong**, the app suggests names your company already used ("oil" → **Oil change**). Tap one to use it, or keep typing something new. *Why:* when every oil change is called "Oil change," FleetOptima can tell they're the same job, which is how maintenance knows a job was done (and, later, which parts it usually takes). Operators, mechanics and owners can all do this. You can also start from the asset itself: open the asset and tap **Create Work Order** (the asset is already filled in).
 
 ### Where a job is (its status)
 | Status | Meaning |
@@ -242,7 +266,7 @@ A work order is one job on one asset: "brakes squealing on Truck 12."
 | **Cancelled** | Stopped without finishing |
 
 - **Start** moves an Open job to In Progress.
-- **Complete** works from Open *or* In Progress. If you open and finish a job in one go, you don't have to tap Start first.
+- **Complete** works from Open *or* In Progress. If you open and finish a job in one go, you don't have to tap Start first. It asks for the asset's **reading now** (miles or hours), filled in with the last one: leave it if it hasn't changed, or type the new one.
 - **Cancel job** works from Open or In Progress.
 - Status can only change through these buttons, not by editing the job, so every change is recorded.
 - A completed or cancelled job can't be started, completed or cancelled again.
@@ -264,6 +288,83 @@ Every work order keeps a list of what happened, oldest first: reported, started,
 - **Add note** adds your own note (just type it).
 - **Records can't be deleted or edited.** If something was wrong, add a note that corrects it. That keeps the history trustworthy.
 - Deleting a work order hides it, but its records and its parts history are kept.
+
+---
+
+## Maintenance
+
+A maintenance rule is a job that comes around on a schedule: "**Oil change**, every **5,000 miles** or **6 months**, whichever comes first." FleetOptima keeps count for every asset the rule covers and makes the work order when it's due.
+
+### Adding a rule
+**An asset → Maintenance → + Add rule.**
+- **Job**: what the work order will be called ("Oil change").
+- **Every how many** miles or hours (the asset's own unit), and/or **every** so many days, weeks, months or years. Fill in one or both. With both, **whichever comes first** wins: a timing belt at 5 years or 70,000 miles is due at 5 years even if the truck only did 20,000.
+- **Apply to**: who gets it, with how many each choice covers right now: **All Trucks (12)**, **All Ford F-150 Trucks (6)**, **Just Truck 12**. It starts on the narrowest group, not the whole fleet.
+
+You never build groups by hand: FleetOptima works out which assets match from what's on them (type, make, model, year). Add a new F-150 later and it **joins the rule on its own**.
+
+*Why:* 10 trucks shouldn't mean typing the same oil change 10 times.
+
+### "Counting from today"
+When you add a rule, FleetOptima doesn't know when each truck last had the job, so it **starts counting from today**, at each one's current reading, and tells you which ones. Their maintenance shows **(assumed)** until someone fixes it.
+
+Know the real date? **The asset → Maintenance → Done when?** Set the day and/or the reading it was done at. "(assumed)" goes away and the count starts from there. If that makes it overdue, the work order shows up right away.
+
+*Why assume instead of asking for every truck:* you can start using it right now and fix the dates as you find them, instead of digging up 10 receipts before anything works.
+
+### Coming up, due, and the work order
+Each rule on an asset shows **Next** (the reading and/or date it's due), **Last** (when it was done), and where it stands:
+
+| Shows | Meaning |
+|---|---|
+| **OK** | Not close yet. |
+| **Coming up** | In the last **20%** of the interval: 1,000 miles before a 5,000-mile oil change, about 5 weeks before a 6-month one. |
+| **Due** | Time's up. A work order has been made. |
+| **Skipped** | Its work order was cancelled; waiting for the next round. |
+| **Off** | Turned off for this asset. |
+
+**When it's due, the work order makes itself**, straight onto the list, called by the job's name, with "Auto-generated by maintenance rule" in its details. Nobody approves it first. There's only ever **one at a time**: until that job is finished, the rule doesn't make another.
+
+Miles and hours are checked the moment someone logs a reading. Dates are checked once a day, and whenever someone opens an asset's Maintenance. *Why "coming up" first:* so a due date is never a surprise.
+
+### When the job's done
+**Complete** the work order and type the reading (it asks). The rule starts counting again **from when it was actually done**: due at 3,000, done at 4,000, next one at 7,000.
+
+- **Did it before the rule asked?** A job with the **same name** on that asset counts too ("Oil change" done by hand resets the oil change rule). Another reason to use the suggested job names.
+- **Done somewhere else** (an outside shop)? Make a work order for it and complete it, so the history stays in one place. Or use **Done when?** on the asset.
+- **Cancelled the work order?** That round is skipped: no new one until the next due point. (Want it gone for good? Turn it off, below.)
+
+### Changing a rule
+**The asset → Maintenance → Change.** Pick who the change is for:
+- **All on this rule**: every asset follows the new interval. Assets with their **own** interval are **left alone** (the app names them).
+- **Just this asset**: it gets its **own** interval ("Truck 7 is old: every 3,000"). Later changes for everyone don't touch it.
+- **Follow the rule again**: drop its own interval.
+
+*Why:* the fleet changes together (switched to synthetic oil), but the odd truck stays odd.
+
+### Turning it off
+- **The asset → Maintenance → Turn off**: no more work orders from this rule **on this asset**. The rest of the fleet keeps it. **Turn on** brings it back.
+- **On a work order a rule made → Stop this rule here** does the same, right where you noticed it.
+
+*Why:* anything automatic should be easy to tell "no" at the moment it bugs you.
+
+### Units
+A rule counts in **one unit**: a rule in miles only covers assets measured in miles. A truck in kilometers needs its own rule. *Why:* "5,000" can't mean miles on one truck and kilometers on the next.
+
+---
+
+## Costs
+
+**Home → Costs** (if you're allowed to see prices). What parts cost on your jobs:
+- Pick a range: **1, 3 or 6 months**, or **Custom** (a number of days, months or years).
+- The **total**, and a **bar for each month**.
+- **Costing the most**: assets, with their **cost per mile or hour**. Tap one to see just that asset.
+- **Used up the most**: parts, with how much was used. Tap one to open the part.
+- Stock still **waiting for a price** (see *When nobody knows what it cost*), and anything used up or lost **outside work orders**.
+
+Each asset's page has the same thing for that asset under **Costs** (last 6 months; **See costs** for more).
+
+**Parts only for now:** labor and outside shop bills aren't counted yet.
 
 ---
 
@@ -353,4 +454,8 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "Error 215: A group with this name already exists." | Pick another name. |
 | "Error 216: Only an admin can change an admin." | Ask an Admin. |
 | "That doesn't exist anymore." | Someone deleted it. |
+| "That's lower than the last reading... Readings only go up." | Odometers and hour meters don't go backward. Check the number. |
+| "Set how often: a reading, a time, or both." | A maintenance rule needs miles/hours, a time, or both. |
+| "Error 222: A maintenance rule needs a job name and at least one interval..." | Same: give it a name and how often. |
+| "Error 223: That isn't a field this asset type's rules can match on." | The rule tried to match on something this type doesn't use. Pick from the Apply to list instead. |
 
