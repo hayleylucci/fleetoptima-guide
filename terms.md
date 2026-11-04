@@ -9,10 +9,10 @@ FleetOptima is software for tracking the things your business owns and keeps run
 
 ## 2. The beta
 FleetOptima is in **beta**. That means:
-- **It's free during the beta.** No card needed.
-- We'll give you at least **30 days' notice** before any billing starts, with the price, so you can decide whether to keep going. Nothing is charged without you agreeing to it.
+- **Up to 10 assets are free during the beta.** No card needed.
+- **More than 10 assets is a paid plan.** We'll tell you the price before you're charged, and nothing is charged without you agreeing to it.
+- **Want more than 10 free during the beta?** Get in touch at support@fleetoptima.org.
 - Things will change and improve often, and sometimes something will break. We'll fix what breaks as fast as we can, but during the beta we can't promise the service will always be up or free of mistakes.
-- A free beta account can hold a limited number of assets (shown when you sign up). Need more? Ask.
 
 ## 3. Your account
 - Keep your password to yourself, and tell us right away if you think someone else got into your account.
@@ -44,7 +44,7 @@ FleetOptima helps you keep track of things: maintenance reminders, VIN lookups, 
 FleetOptima is provided **"as is"**, especially during the beta. As far as the law allows, we don't promise it will always be available, error-free, or right for every purpose.
 
 ## 9. Limits on what we owe
-As far as the law allows, FleetOptima LLC isn't responsible for indirect losses, such as lost profits, lost business, or a missed repair, that come from using or not being able to use FleetOptima. If we're ever responsible for anything, the most we owe is what you paid us in the 12 months before the problem. During the free beta, that's $0, so please keep your own records of anything critical.
+As far as the law allows, FleetOptima LLC isn't responsible for indirect losses, such as lost profits, lost business, or a missed repair, that come from using or not being able to use FleetOptima. If we're ever responsible for anything, the most we owe is what you paid us in the 12 months before the problem. On the free plan, that's $0, so please keep your own records of anything critical.
 
 ## 10. Leaving
 - You can stop using FleetOptima any time. Delete your account from **Account settings**, or email us to close your company's account.

@@ -20,8 +20,9 @@ Log in with your **username or your email**, and your password (press **Enter** 
 ### Starting free (signing up your company)
 **Login → New here? Start free.** Type your business name, your name, a username, your email and a password. We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
 
-- FleetOptima is in **free beta**: no card, no end date. We'll give you **30 days' notice** before billing ever starts.
-- A free account holds up to **10 assets**. Need more? Get in touch.
+- **Up to 10 assets are free** during the beta. No card.
+- **More than 10 is a paid plan.** We'll tell you the price before anything is charged.
+- **Want more than 10 free during the beta?** Get in touch.
 - **Didn't get the email?** Check spam, then try logging in: you'll see **Resend** for a new link.
 
 *Why the email check:* so nobody can sign up with someone else's address.
