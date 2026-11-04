@@ -62,7 +62,7 @@ Everything travels over encrypted connections (HTTPS). Passwords are hashed. Log
 FleetOptima is a business tool for adults. It isn't meant for anyone under 18, and we don't knowingly collect information from children.
 
 ## Changes
-If we change this policy in a way that matters, we'll tell you in the app or by email **before** the change takes effect. The date at the top shows the latest version.
+When we change this policy in a way that matters, we'll tell you in the app or by email, and the app asks you to agree again the next time you log in. The date at the top shows the latest version. **If we ever want to use information you already gave us in a new way, we'll ask you first.**
 
 ## Contact
 **FleetOptima LLC** · Alabama, USA · **support@fleetoptima.org**

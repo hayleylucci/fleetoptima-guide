@@ -52,7 +52,7 @@ As far as the law allows, FleetOptima LLC isn't responsible for indirect losses,
 - After a company's account closes, we keep its data for 90 days, then delete it (see the Privacy Policy).
 
 ## 11. Changes to these terms
-If we change these terms in a way that matters, we'll tell you in the app or by email **before** the change takes effect. If you keep using FleetOptima after that, you're agreeing to the new terms. If you don't agree, you can leave (section 10).
+When we change these terms in a way that matters, we'll tell you in the app or by email, and the app asks you to agree to the new version the next time you log in. If you don't agree, you can leave (section 10). The date at the top shows the latest version.
 
 ## 12. The legal bits
 These terms are governed by the laws of the **State of Alabama, USA**. If there's ever a disagreement, let's try to sort it out by talking first: email us. If one part of these terms can't be enforced, the rest still applies.
