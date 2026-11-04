@@ -20,9 +20,10 @@ Log in with your **username or your email**, and your password (press **Enter** 
 ### Starting free (signing up your company)
 **Login → New here? Start free.** Type your business name, your name, a username, your email and a password. We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
 
-- **Up to 10 assets are free** during the beta. No card.
-- **More than 10 is a paid plan.** We'll tell you the price before anything is charged.
-- **Want more than 10 free during the beta?** Get in touch.
+- **Free for 14 days**, for up to 10 assets. No card to start.
+- **After that it's $8 per asset per month.** We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
+- **Need more time or more assets during the trial?** Get in touch.
+- **Trial over and no plan yet?** Everything goes read-only: you can still see and download it all, you just can't add or change anything until you pick a plan.
 - **Didn't get the email?** Check spam, then try logging in: you'll see **Resend** for a new link.
 
 *Why the email check:* so nobody can sign up with someone else's address.

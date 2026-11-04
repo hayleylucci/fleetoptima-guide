@@ -7,12 +7,13 @@ These are the rules for using FleetOptima. By creating an account or using Fleet
 ## 1. What FleetOptima is
 FleetOptima is software for tracking the things your business owns and keeps running (vehicles, equipment, tools, property and so on), the work done on them, the parts used and what it all costs. We run it on the internet; you use it in a web browser.
 
-## 2. The beta
-FleetOptima is in **beta**. That means:
-- **Up to 10 assets are free during the beta.** No card needed.
-- **More than 10 assets is a paid plan.** We'll tell you the price before you're charged, and nothing is charged without you agreeing to it.
-- **Want more than 10 free during the beta?** Get in touch at support@fleetoptima.org.
-- Things will change and improve often, and sometimes something will break. We'll fix what breaks as fast as we can, but during the beta we can't promise the service will always be up or free of mistakes.
+## 2. Trial, price and the beta
+- **Every new company starts with a free 14-day trial**, for up to 10 assets. No card needed to start.
+- **After the trial, FleetOptima is $8 per asset per month.** We'll ask you to pick a plan before your trial ends, and nothing is charged without you agreeing to it.
+- **Need more time or more assets during your trial?** Get in touch at support@fleetoptima.org.
+- **If your trial ends without a plan,** your account becomes **read-only**: you can still see and download everything, but you can't add or change anything until you pick a plan.
+- FleetOptima is also in **beta**:
+  things will change and improve often, and sometimes something will break. We'll fix what breaks as fast as we can, but during the beta we can't promise the service will always be up or free of mistakes.
 
 ## 3. Your account
 - Keep your password to yourself, and tell us right away if you think someone else got into your account.
