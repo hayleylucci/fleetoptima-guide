@@ -97,7 +97,7 @@ A header starts closed and doesn't load anything until you open it. Tap it again
 
 ### What's on the form
 The form has two parts:
-- **The top is how it is right now:** nickname, asset type, **operator** (the person who usually runs it), and its **mileage or hours** with the unit they're counted in.
+- **The top is how it is right now:** nickname, asset type, **operator** (the person who usually runs it), the **unit** it counts in, and its **current reading**. The reading is named after the unit: **Current miles**, **Current hours** (just **Current reading** until a unit is picked).
 - **Specifications are what it is:** the VIN (or serial number), make, model and year. These hardly ever change once they're filled in.
 
 *Why split it:* the things you update all the time sit on top where your thumb is, and the things you set once stay out of the way.
