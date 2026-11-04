@@ -29,8 +29,10 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 ### Starting free (signing up your company)
 **Login → New here? Start free.** Type your business name, your name, a username, your email and a password. We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
 
-- FleetOptima is in **free beta**: no card, no end date. We'll give you **30 days' notice** before billing ever starts.
-- A free account holds up to **10 assets**. Need more? Get in touch.
+- **Free for 14 days**, for up to 10 assets. No card to start.
+- **After that it's $8 per asset per month.** We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
+- **Need more time or more assets during the trial?** Get in touch.
+- **Trial over and no plan yet?** Everything goes read-only: you can still see it all (and ask us for a copy), you just can't add or change anything until you pick a plan.
 - **Didn't get the email?** Check spam, then try logging in: you'll see **Resend** for a new link.
 
 *Why the email check:* so nobody can sign up with someone else's address.
