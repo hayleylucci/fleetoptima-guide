@@ -40,7 +40,7 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 
 ### Home
 Home is grouped into sections:
-- **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **New Work Order**.
+- **Quick actions**: the everyday jobs, as wide buttons on top: **New Work Order**, and **Update miles** (or hours) if you're the operator of a vehicle.
 - **Fleet**: **Assets**, **Work Orders**, **Parts** and **Costs** (Costs only for people allowed to see prices).
 - **Admin**: **Users**, **Groups** and **Asset Types**.
 
@@ -71,7 +71,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 - **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that.
 - **You can copy any text on a details page.** Long-press it (or drag across it with a mouse) to copy a VIN, a part number or a note.
 - **Missing something in a dropdown?** Most dropdowns end with **New ...** (New Asset Type, New User, New Measuring Unit). Make it right there, and when you come back it's already picked. *Why:* so you never have to abandon a half-filled form just because one choice was missing.
-- **There's more than one way to do most things.** You can start a work order from the home page (**Quick actions → New Work Order**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. You can log a reading from the asset's **Readings**, or when you complete a job. Use whichever feels natural. They all do the same thing behind the scenes.
+- **There's more than one way to do most things.** You can start a work order from the home page (**Quick actions → New Work Order**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. You can update a reading from Home (**Update miles**, if you drive one), from the asset's **Readings**, or when you complete a job. Use whichever feels natural. They all do the same thing behind the scenes.
 
 ### Adding, changing and deleting
 - **Add:** open a list and tap **+ New** (bottom right).
@@ -97,15 +97,19 @@ Open an asset and the **essentials** are on top: name, type, operator, reading. 
 - **More details**: everything else saved on it (the rest of the VIN lookup, see below).
 - **Maintenance**: its maintenance rules, and what's coming up or due (see **Maintenance**).
 - **Work orders**: this asset's jobs, newest first. Tap one to open it.
-- **Readings**: its current miles or hours, and **Log reading**.
+- **Readings**: its current miles or hours, and **Update reading**.
 - **Costs**: what its parts cost over the last 6 months, per mile or hour (only if you can see costs).
 
 A header starts closed and doesn't load anything until you open it. Tap it again to close it.
 
 *Why:* an asset collects a lot over the years. The things you check every day stay on top, and the rest is one tap away instead of a long scroll.
 
-### Logging a reading
-**The asset → Readings → Log reading.** Type what the odometer or hour meter says now. Readings only go up, so the app stops you if the number is lower than the last one. You can also log one when you **complete a job** (the app asks).
+### Updating a reading (miles, hours)
+**If you're the operator of a vehicle:** Home → **Update miles** (it says hours for a mower or other equipment). With one vehicle it goes straight to it; with more, pick which one from the list. Under the button you can see the last reading.
+
+**Anyone else:** the asset → **Readings** → **Update reading**.
+
+Type what the odometer or hour meter says now. Readings only go up, so the app stops you if the number is lower than the last one. You can also log one when you **complete a job** (the app asks).
 
 *Why it matters:* maintenance that runs on miles or hours (see **Maintenance**) only knows a truck is due if someone tells it the reading. Costs per mile and per hour come from readings too.
 
@@ -226,7 +230,7 @@ You only see the buttons you can use. Without Delete there's no Delete button; w
 | **Parts** | The parts list, restocking, counting, setting a batch's cost. |
 | **Pulling & returning parts** | Taking parts for a job (or Use or toss), and putting them back. |
 | **Costs** | Seeing prices and what jobs cost. **Without it, prices are blank everywhere**: parts, batches, a job's parts total. |
-| **Mileage** | Logging a reading (miles, hours, whatever the asset counts). |
+| **Mileage** | Updating a reading (miles, hours, whatever the asset counts). |
 | **Maintenance (what's due)** | Seeing an asset's maintenance and what's due (View); saying when it was really done, and turning a rule off for one asset (Edit). |
 | **Maintenance rules** | Setting up the rules themselves: adding, changing (for all, or one asset's own interval) and removing them. |
 | **Asset Types** | The kinds of assets and their measuring units. |
