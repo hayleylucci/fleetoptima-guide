@@ -62,6 +62,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 - **App settings** picks the look: light, dark, or whatever your phone or computer is set to.
 
 ### Everywhere
+- **Refreshed a page?** The back arrow still works: it takes you up one level (a work order → the work order list → Home).
 - **Every page has its own web address.** For example, `/assets` is the asset list, `/assets/new` is a new asset, `/work-orders/123` is one work order, and `/parts/123/edit` edits a part. You can bookmark a page or send someone a link to it.
 - **The back button walks back one page at a time**, like any website. On the home page, the first back shows **"Press back again to exit"**, and the second one leaves the app.
 - **Which version am I on?** The small grey number at the bottom of Home and the login page (like **v0.4.0**). Tap it to see **What's new**: every update, newest first, with a link to the part of this guide that explains each change. It's also under **Org settings → What's new**. Hold the number down to see the exact build, if we ever ask.
@@ -275,9 +276,9 @@ A work order is one job on one asset: "brakes squealing on Truck 12."
 **Home → Work Orders.** Jobs still to do (**Open jobs**) are on top, newest first. Finished and cancelled ones are tucked into **History** at the bottom: tap it to slide it open.
 
 ### Reporting a problem
-**Home → New Work Order** (under Quick actions). Pick the asset, say what's wrong, and add any details.
+**Home → New Work Order** (under Quick actions). Pick the asset, give the job a **Title** ("Oil change", "Brakes squealing"), and say **What's wrong**. Notes go in the job's **Details** as you work on it.
 
-As you type **What's wrong**, the app suggests names your company already used ("oil" → **Oil change**). Tap one to use it, or keep typing something new. *Why:* when every oil change is called "Oil change," FleetOptima can tell they're the same job, which is how maintenance knows a job was done (and, later, which parts it usually takes). Operators, mechanics and owners can all do this. You can also start from the asset itself: open the asset and tap **Create Work Order** (the asset is already filled in).
+As you type the **Title**, the app suggests names your company already used ("oil" → **Oil change**). Tap one to use it, or keep typing something new. *Why:* when every oil change is called "Oil change," FleetOptima can tell they're the same job, which is how maintenance knows a job was done (and, later, which parts it usually takes). Operators, mechanics and owners can all do this. You can also start from the asset itself: open the asset and tap **Create Work Order** (the asset is already filled in).
 
 ### Where a job is (its status)
 | Status | Meaning |
@@ -304,11 +305,11 @@ As you type **What's wrong**, the app suggests names your company already used (
 ### Cancelling a job
 When you cancel a job that still has parts out, the app lists them under **Back on shelf**, all ticked, because a cancelled job usually didn't happen. **Untick anything that got used up** (oil already poured in, a part that turned out to be defective); it stays charged to the job. A cancelled job can still have a cost.
 
-### Records (a job's history)
+### Details (a job's notes and history)
 Every work order keeps a list of what happened, oldest first: reported, started, parts pulled, parts returned, edited, completed or cancelled, plus any notes.
 - Each record shows **who** did it and when.
 - **Add note** adds your own note (just type it).
-- **Records can't be deleted or edited.** If something was wrong, add a note that corrects it. That keeps the history trustworthy.
+- **Details can't be deleted or edited.** If something was wrong, add a note that corrects it. That keeps the history trustworthy.
 - Deleting a work order hides it, but its records and its parts history are kept.
 
 ---
@@ -405,12 +406,12 @@ FleetOptima is **$8 per asset per month**. On **Billing & plan**, pick how many 
 - Your card number goes to Stripe, never to FleetOptima.
 
 ### Changing it later
-- **More assets:** tap **+** and **Add to my plan**. You're charged just for the rest of this month on the extra ones, then the full amount after.
-- **Fewer assets:** tap **−** and **Pay for ... instead**. Same rule: not below your active assets.
+- **More assets:** tap **+** and **Add to my plan**. Before anything happens, a box shows **exactly what it charges your card now** (just the rest of this month on the extra ones) and the new monthly amount after. Tap **Charge $...** to go ahead, or **Cancel**. If the card doesn't go through, nothing changes.
+- **Fewer assets:** tap **−** and **Pay for ... instead**. It asks first too: the lower amount starts on your next bill, and this month isn't refunded. Same rule: not below your active assets.
 - **Card, invoices or cancel:** opens Stripe's page, where you change your card, see and download every invoice, or cancel.
 
 ### If a payment fails
-You'll see **"Your last payment didn't go through"** on Home. FleetOptima **keeps working** while the card is retried. Update the card under **Card, invoices or cancel**.
+You'll see **"Your last payment didn't go through. Update your card by (date)"** on Home. FleetOptima **keeps working** until that date while the card is retried (about two weeks). Update the card under **Card, invoices or cancel** before then. If it still hasn't gone through by the date, the plan is canceled and FleetOptima goes **read-only** (see below) until a plan is picked again.
 
 ### Read-only
 If the trial ends without a plan, or the plan is canceled, FleetOptima goes **read-only**: everything is still there and you can look at all of it, but nothing can be added, changed or deleted. You'll see **"FleetOptima is read-only right now"** if you try. Pick a plan (or email us) and it all opens back up right away. Nothing is lost.
