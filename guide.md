@@ -15,6 +15,15 @@ Log in with your **username or your email**, and your password (press **Enter** 
 - **Forgot your password?** Tap **Forgot password?**, type your username or email, and we'll email you a link to pick a new one. The link works once and lasts an hour. Your old password keeps working until you use it, so if you didn't ask for it, just ignore the email.
 - **No email on your account?** Ask your Admin to tap **Reset password** on your user. They'll get a link or a QR code for you.
 
+### Staying logged in
+Once you log in, **you stay logged in on that phone or computer**, even if you close it and come back tomorrow. You're only asked again if you haven't opened FleetOptima there in **30 days**, if you **log out**, or if your password changes.
+
+- **Log out** (account menu) ends it on that device only.
+- **Sign out everywhere** (Account settings) ends it on every phone and computer at once, including the one in your hand.
+- **Changing your password** logs you out everywhere else, but not where you changed it.
+
+*Why:* a mechanic with greasy hands shouldn't have to type a password every morning, and a lost phone shouldn't stay logged in forever. Sign out everywhere fixes that in one tap.
+
 **The first load can take up to a minute.** When nobody has used FleetOptima for a while, the server rests, and the first visit wakes it up. You'll see **"The server is waking up, hang tight."** That's normal; after that it's quick.
 
 ### Starting free (signing up your company)
@@ -46,12 +55,14 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 ### The top bar
 - The **?** opens this guide at the part about the page you're on.
 - The **megaphone** sends us feedback (see below).
-- **Your initial** in a circle opens the **account menu**: your name and role, **Account settings** (change your password, delete your account), **App settings**, **Org settings** (VIN settings, for anyone allowed to change Settings), **Help** and **Log out**.
+- **Your initial** in a circle opens the **account menu**: your name and role, **Account settings** (change your password, sign out everywhere, delete your account), **App settings**, **Org settings** (VIN settings, for anyone allowed to change Settings), **Help** and **Log out**.
 - **App settings** picks the look: light, dark, or whatever your phone or computer is set to.
 
 ### Everywhere
 - **Every page has its own web address.** For example, `/assets` is the asset list, `/assets/new` is a new asset, `/work-orders/123` is one work order, and `/parts/123/edit` edits a part. You can bookmark a page or send someone a link to it.
 - **The back button walks back one page at a time**, like any website. On the home page, the first back shows **"Press back again to exit"**, and the second one leaves the app.
+- **Which version am I on?** The small grey number at the bottom of Home and the login page (like **v0.4.0**). Tap it to see **What's new**: every update, newest first, with a link to the part of this guide that explains each change. It's also under **Org settings → What's new**. Hold the number down to see the exact build, if we ever ask.
+- **After an update**, a note shows on Home once: **"Updated to v0.4.0. See what changed."** Tap **What's new** to read it, or **Got it** to hide it until the next update. Don't want these notes? Turn off **Show a note on Home after an update** on the What's new page.
 - **"A new version of FleetOptima is ready."** When we update FleetOptima while you have it open, a thin bar shows across the top. Tap **Reload** to get the new version (anything you already saved is safe), or **Later** to finish what you're doing first. *Why:* an open page keeps running the old version until it reloads, and old and new don't always get along.
 - **Opening a link to something that was deleted** (or doesn't exist) shows a **Not found** page with a button to go home.
 - **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that.
@@ -141,6 +152,9 @@ Everyone only ever sees their own company's assets, jobs, parts and people. Tap 
 
 *Why:* so the person reporting a flat tire can't accidentally delete a coworker's account or change company settings. Give Admin to whoever runs the shop, and groups to everyone else.
 
+### Name and username
+Everyone has both. The **Name** is what everybody sees: on lists, on work orders, in history. The **Username** is what they type to log in (they can also log in with their email). They're separate on purpose: fix a name or add a last name (**Matthew** to **Matthew Smith**) and their login stays the same. Only change the **Username** box on **Edit** if they should log in with something new, and tell them when you do.
+
 ### Adding someone
 **Home → Users → + New.** Fill in their **Name**, a **Username** (what they log in with), their **Email** (optional), their **Role** and their **Group**. Then pick **How will they sign in?**
 
@@ -154,8 +168,13 @@ Everyone only ever sees their own company's assets, jobs, parts and people. Tap 
 ### When someone can't get in
 Open their user and tap **Reset password**. You get a link and a QR code, same as an invite (emailed too, if you want). Their old password keeps working until they use the link, which works once and lasts **24 hours**. You can also tap **Invite** on anyone who never finished setting up.
 
+### Lost phone, or someone left
+Open their user and tap **Sign out everywhere**. It asks first, then logs them out on every phone and computer. A screen they already have open can keep working for up to **15 minutes**, then it's done. If they've left for good, **Delete** their user too. *Why:* a phone left in a truck or a shop computer someone forgot to log out of shouldn't keep a door open.
+
 ### Your account
-**Account menu → Account settings → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there.
+**Account menu → Account settings → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there. Changing it logs you out on your other devices.
+
+**Sign out everywhere** (same page) logs you out on every phone and computer, this one too. Use it if you lost a phone or logged in somewhere you shouldn't stay logged in.
 
 **Delete account** (the red button on the same page) asks if you're sure and for your password, and you can't log in again afterward. Your work orders and history stay with the company. **If you're your company's only Admin, deleting your account deletes the company too**: everyone in it loses access. FleetOptima warns you and makes you tick a box first. *Why:* a company with nobody in charge can't add people, change settings or fix anything. Make someone else an Admin first if the company should keep going without you.
 
@@ -437,7 +456,7 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "Press back again to exit" | You're on the home page. One more back leaves the app. |
 | "The server is waking up, hang tight." | First visit in a while. Give it up to a minute. |
 | "Can't reach the server right now." | Check your internet, then try again. |
-| "Your session expired. Please log in again." | You've been logged in a long time. Log in again and carry on. |
+| "Your session expired. Please log in again." | You haven't used FleetOptima on this device in 30 days, your password changed, or someone signed you out everywhere. Log in again and carry on. |
 | "You don't have permission to do that." | Your groups don't allow this. Ask your Admin (see **Groups and permissions**). |
 | "Error 108: Too many wrong passwords..." | Ten wrong tries in a row. Wait 15 minutes, or ask your Admin. |
 | "That link has expired or was already used." | Invite and reset links work once and run out. Ask for a new one (or use **Forgot password**). |
