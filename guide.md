@@ -27,12 +27,13 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 **The first load can take up to a minute.** When nobody has used FleetOptima for a while, the server rests, and the first visit wakes it up. You'll see **"The server is waking up, hang tight."** That's normal; after that it's quick.
 
 ### Starting free (signing up your company)
-**Login → New here? Start free.** Type your business name, your name, a username, your email and a password. We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
+**Login → New here? Start free.** Type your business name, your name, a username, your email and a password, and tick the box to agree to the **Terms of Service** and **Privacy Policy** (both open if you tap them). We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
 
 - **Free for 14 days**, for up to 10 assets. No card to start.
 - **After that it's $8 per asset per month.** We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
 - **Need more time or more assets during the trial?** Get in touch.
 - **Trial over and no plan yet?** Everything goes read-only: you can still see it all (and ask us for a copy), you just can't add or change anything until you pick a plan.
+- More in **Billing and your plan** below.
 - **Didn't get the email?** Check spam, then try logging in: you'll see **Resend** for a new link.
 
 *Why the email check:* so nobody can sign up with someone else's address.
@@ -389,6 +390,31 @@ Each asset's page has the same thing for that asset under **Costs** (last 6 mont
 
 ---
 
+## Billing and your plan
+**Account menu → Org settings → Billing & plan.** Only Admins can change the plan.
+
+### The free trial
+Every new company gets **14 days free**, for up to **10 assets**, with no card. The account menu shows how many days are left (under your name). In the last **5 days**, a note shows on Home with **Pick a plan** and **Need more time or assets? Email us**, and your Admins get an email 5 days before, the day before, and when it ends.
+
+**Need longer, or more than 10 assets to try it properly?** Tap **Email us** (it fills in your company name) and tell us. We'll sort it out.
+
+### Picking a plan
+FleetOptima is **$8 per asset per month**. On **Billing & plan**, pick how many assets you want to pay for with **−** and **+** (it shows the monthly total), then tap **Pick a plan**. You go to our payment company's secure page (Stripe) to enter your card, then come back here. It takes a few seconds to say **Paid plan**.
+
+- You can't pick fewer than the assets you already have. To pay for fewer, retire (delete) the ones you don't use first, then come back. Nothing is ever deleted for you.
+- Your card number goes to Stripe, never to FleetOptima.
+
+### Changing it later
+- **More assets:** tap **+** and **Add to my plan**. You're charged just for the rest of this month on the extra ones, then the full amount after.
+- **Fewer assets:** tap **−** and **Pay for ... instead**. Same rule: not below your active assets.
+- **Card, invoices or cancel:** opens Stripe's page, where you change your card, see and download every invoice, or cancel.
+
+### If a payment fails
+You'll see **"Your last payment didn't go through"** on Home. FleetOptima **keeps working** while the card is retried. Update the card under **Card, invoices or cancel**.
+
+### Read-only
+If the trial ends without a plan, or the plan is canceled, FleetOptima goes **read-only**: everything is still there and you can look at all of it, but nothing can be added, changed or deleted. You'll see **"FleetOptima is read-only right now"** if you try. Pick a plan (or email us) and it all opens back up right away. Nothing is lost.
+
 ## Parts and stock
 
 ### Quantities
@@ -475,6 +501,10 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "Error 215: A group with this name already exists." | Pick another name. |
 | "Error 216: Only an admin can change an admin." | Ask an Admin. |
 | "That doesn't exist anymore." | Someone deleted it. |
+| "FleetOptima is read-only right now..." | Your company's trial is over or its plan was canceled. An Admin can pick a plan under **Org settings → Billing & plan** (see **Billing and your plan**). |
+| "Payments aren't set up yet. Email us..." | Tap **Email us** and we'll set your plan up for you. |
+| "Error 232: Pay for at least as many assets as you have." | Pick a number at least as big as your active assets. |
+| "Error 234: You have more active assets than that..." | Retire (delete) the assets you don't use first, then lower the plan. |
 | "That's lower than the last reading... Readings only go up." | Odometers and hour meters don't go backward. Check the number. |
 | "Set how often: a reading, a time, or both." | A maintenance rule needs miles/hours, a time, or both. |
 | "Error 222: A maintenance rule needs a job name and at least one interval..." | Same: give it a name and how often. |
