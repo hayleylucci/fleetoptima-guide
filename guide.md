@@ -23,7 +23,7 @@ Log in with your **username or your email**, and your password (press **Enter** 
 - **Free for 14 days**, for up to 10 assets. No card to start.
 - **After that it's $8 per asset per month.** We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
 - **Need more time or more assets during the trial?** Get in touch.
-- **Trial over and no plan yet?** Everything goes read-only: you can still see and download it all, you just can't add or change anything until you pick a plan.
+- **Trial over and no plan yet?** Everything goes read-only: you can still see it all (and ask us for a copy), you just can't add or change anything until you pick a plan.
 - **Didn't get the email?** Check spam, then try logging in: you'll see **Resend** for a new link.
 
 *Why the email check:* so nobody can sign up with someone else's address.

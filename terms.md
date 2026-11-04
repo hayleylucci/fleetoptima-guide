@@ -11,7 +11,7 @@ FleetOptima is software for tracking the things your business owns and keeps run
 - **Every new company starts with a free 14-day trial**, for up to 10 assets. No card needed to start.
 - **After the trial, FleetOptima is $8 per asset per month.** We'll ask you to pick a plan before your trial ends, and nothing is charged without you agreeing to it.
 - **Need more time or more assets during your trial?** Get in touch at support@fleetoptima.org.
-- **If your trial ends without a plan,** your account becomes **read-only**: you can still see and download everything, but you can't add or change anything until you pick a plan.
+- **If your trial ends without a plan,** your account becomes **read-only**: you can still see everything (and ask us for a copy of it), but you can't add or change anything until you pick a plan.
 - FleetOptima is also in **beta**:
   things will change and improve often, and sometimes something will break. We'll fix what breaks as fast as we can, but during the beta we can't promise the service will always be up or free of mistakes.
 
