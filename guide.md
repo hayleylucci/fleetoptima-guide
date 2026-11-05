@@ -40,7 +40,8 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 
 ### Home
 Home is grouped into sections:
-- **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **New Work Order**.
+- **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **New Work Order** (and **Update miles** if you run a vehicle).
+- **Maintenance**: what's **due** (red) or **coming up** (amber), most urgent first, if you're allowed to see maintenance. Tap a due one to open its work order, or a coming-up one to open the asset. **See all** lists every one. It's not there when nothing is due.
 - **Fleet**: **Assets**, **Work Orders**, **Parts** and **Costs** (Costs only for people allowed to see prices).
 - **Admin**: **Users**, **Groups** and **Asset Types**.
 
@@ -137,7 +138,7 @@ A VIN that fails the check digit doesn't look anything up. Compare it with the p
 **Home → Asset Types.** Every asset is one type. You start with **Vehicle** and **Equipment**, and you can add your own (Trailer, Forklift, Generator...). A type has:
 - **Name**
 - **Default measuring unit**: what new assets of this type count in (Vehicle → Miles, Equipment → Hours).
-- **Identifier label**: what the ID number is called on the form, like **VIN** or **Serial Number**.
+- **What's its ID called?**: what the ID number is called on the form, like **VIN** or **Serial Number**. New types start as **Serial Number**; change it to **VIN** for vehicles.
 
 *Why asset types:* they're presets. Pick "Equipment" and the form already knows it counts hours and asks for a serial number, so you're not setting the same things on every machine. Make a type for anything you have a lot of.
 
@@ -328,6 +329,8 @@ You never build groups by hand: FleetOptima works out which assets match from wh
 
 *Why:* 10 trucks shouldn't mean typing the same oil change 10 times.
 
+**Turned a rule off and back on?** It starts counting again from that day's reading (marked "assumed"), so the time it was off doesn't make a job overdue. If the job was really done some other time, set when it was last done.
+
 ### "Counting from today"
 When you add a rule, FleetOptima doesn't know when each truck last had the job, so it **starts counting from today**, at each one's current reading, and tells you which ones. Their maintenance shows **(assumed)** until someone fixes it.
 
@@ -409,6 +412,8 @@ FleetOptima is **$8 per asset per month**. On **Billing & plan**, pick how many 
 - **More assets:** tap **+** and **Add to my plan**. Before anything happens, a box shows **exactly what it charges your card now** (just the rest of this month on the extra ones) and the new monthly amount after. Tap **Charge $...** to go ahead, or **Cancel**. If the card doesn't go through, nothing changes.
 - **Fewer assets:** tap **−** and **Pay for ... instead**. It asks first too: the lower amount starts on your next bill, and this month isn't refunded. Same rule: not below your active assets.
 - **Card, invoices or cancel:** opens Stripe's page, where you change your card, see and download every invoice, or cancel.
+- **When's the next bill?** Billing & plan says **Next bill: (date) · $...**.
+- **Canceled?** It keeps working until the end of the month you paid for. Billing & plan says **Canceled: works until (date)**, then it goes read-only (see below). Pick a plan again any time.
 
 ### If a payment fails
 You'll see **"Your last payment didn't go through. Update your card by (date)"** on Home. FleetOptima **keeps working** until that date while the card is retried (about two weeks). Update the card under **Card, invoices or cancel** before then. If it still hasn't gone through by the date, the plan is canceled and FleetOptima goes **read-only** (see below) until a plan is picked again.
