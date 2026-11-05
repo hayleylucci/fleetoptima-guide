@@ -39,7 +39,9 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 *Why the email check:* so nobody can sign up with someone else's address.
 
 ### Home
-Home is grouped into sections:
+The top of Home says hello and shows **what needs you today**: how many **open jobs** there are, and what maintenance is **due** or **coming up**. Tap **open jobs** to see just those work orders, or the maintenance count to see that list. With nothing waiting, it says **All caught up**. The first time you open FleetOptima each day it's a big card with your name; after that it shrinks to one slim line so it's out of your way.
+
+Below it, Home is grouped into sections:
 - **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **New Work Order** (and **Update miles** if you run a vehicle).
 - **Maintenance**: what's **due** (red) or **coming up** (amber), most urgent first, if you're allowed to see maintenance. Tap a due one to open its work order, or a coming-up one to open the asset. **See all** lists every one. It's not there when nothing is due.
 - **Fleet**: **Assets**, **Work Orders**, **Parts** and **Costs** (Costs only for people allowed to see prices).
@@ -71,6 +73,8 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 - **"A new version of FleetOptima is ready."** When we update FleetOptima while you have it open, a thin bar shows across the top. Tap **Reload** to get the new version (anything you already saved is safe), or **Later** to finish what you're doing first. *Why:* an open page keeps running the old version until it reloads, and old and new don't always get along.
 - **Opening a link to something that was deleted** (or doesn't exist) shows a **Not found** page with a button to go home.
 - **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that.
+- **Every list has a search box** at the top. Type any part of a name or what's under it ("truck 3", "oil"), and only the matches stay. Every word you type has to match. **Show everything** (or the **x** in the box) brings the whole list back.
+- **An empty list** says so and has a button to add the first one.
 - **You can copy any text on a details page.** Long-press it (or drag across it with a mouse) to copy a VIN, a part number or a note.
 - **Missing something in a dropdown?** Most dropdowns end with **New ...** (New Asset Type, New User, New Measuring Unit). Make it right there, and when you come back it's already picked. *Why:* so you never have to abandon a half-filled form just because one choice was missing.
 - **There's more than one way to do most things.** You can start a work order from the home page (**Quick actions → New Work Order**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). You can change stock from a part, or by pulling parts on a work order. You can log a reading from the asset's **Readings**, or when you complete a job. Use whichever feels natural. They all do the same thing behind the scenes.
@@ -78,7 +82,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 ### Adding, changing and deleting
 - **Add:** open a list and tap **+ New** (bottom right).
 - **Change:** open the thing and tap **Edit**, then **Save**.
-- **Delete:** open it and tap **Delete**. The app asks first, because you can't undo it from the app. Deleting hides it everywhere, but its history is kept: a deleted asset's work orders and records stay on the books. *Why:* a truck you sold last year still had real repairs and real costs, and your totals shouldn't change because it's gone.
+- **Delete:** open it and tap **Delete** (on a work order it's under the **⋯** next to the job's status). The app asks first. Then it's gone from the list, and a bar at the bottom says **Deleted ... Undo** for a few seconds: tap **Undo** and it's back like nothing happened. *Why:* everyone taps the wrong thing sometimes. Deleting hides it everywhere, but its history is kept: a deleted asset's work orders and records stay on the books. *Why:* a truck you sold last year still had real repairs and real costs, and your totals shouldn't change because it's gone.
 
 ---
 
@@ -276,6 +280,8 @@ A work order is one job on one asset: "brakes squealing on Truck 12."
 ### The list
 **Home → Work Orders.** Jobs still to do (**Open jobs**) are on top, newest first. Finished and cancelled ones are tucked into **History** at the bottom: tap it to slide it open.
 
+Under the search box are **filters**: **All**, **Open** (open and in progress), **In progress**, **Done** and **Cancelled**. Tap one to see only those jobs, and **All** to see everything again. Tapping **open jobs** on Home opens the list with **Open** already picked.
+
 ### Reporting a problem
 **Home → New Work Order** (under Quick actions). Pick the asset, give the job a **Title** ("Oil change", "Brakes squealing"), and say **What's wrong**. Notes go in the job's **Details** as you work on it.
 
@@ -285,15 +291,17 @@ As you type the **Title**, the app suggests names your company already used ("oi
 | Status | Meaning |
 |---|---|
 | **Open** | Reported, nobody's working on it yet |
-| **In Progress** | Someone tapped **Start** |
-| **Completed** | Done |
+| **In progress** | Someone tapped **Start** |
+| **Done** | Completed |
 | **Cancelled** | Stopped without finishing |
 
-- **Start** moves an Open job to In Progress.
+**Where the buttons are:** **Complete** is the big button at the bottom of the job, always under your thumb (an Open job has **Start** next to it). The **⋯** at the end of the job's status row has **Complete**, **Cancel job** and **Delete**. **Edit** is on the job itself.
+
+- **Start** moves an Open job to In progress.
 - **Complete** works from Open *or* In Progress. If you open and finish a job in one go, you don't have to tap Start first. It asks for the asset's **reading now** (miles or hours), filled in with the last one: leave it if it hasn't changed, or type the new one.
-- **Cancel job** works from Open or In Progress.
+- **Cancel job** (under the **⋯**) works from Open or In progress.
 - Status can only change through these buttons, not by editing the job, so every change is recorded.
-- A completed or cancelled job can't be started, completed or cancelled again.
+- A done or cancelled job can't be started, completed or cancelled again, so those buttons go away.
 
 ### Parts on a job
 - **Pull part** opens a search. Type a name, a part number or a barcode, or tap the **scan** button and point the camera at the box. Pick the part, then say how many.
@@ -304,7 +312,7 @@ As you type the **Title**, the app suggests names your company already used ("oi
 - **Forgot to log a part before finishing?** Pull part and Return still work on **completed and cancelled jobs**. The job stays finished, and its records say the change was **added after the job was completed**, so nobody mistakes it for something that happened during the job. Nothing that's already there gets edited.
 
 ### Cancelling a job
-When you cancel a job that still has parts out, the app lists them under **Back on shelf**, all ticked, because a cancelled job usually didn't happen. **Untick anything that got used up** (oil already poured in, a part that turned out to be defective); it stays charged to the job. A cancelled job can still have a cost.
+Tap the **⋯** next to the job's status, then **Cancel job**. When you cancel a job that still has parts out, the app lists them under **Back on shelf**, all ticked, because a cancelled job usually didn't happen. **Untick anything that got used up** (oil already poured in, a part that turned out to be defective); it stays charged to the job. A cancelled job can still have a cost.
 
 ### Details (a job's notes and history)
 Every work order keeps a list of what happened, oldest first: reported, started, parts pulled, parts returned, edited, completed or cancelled, plus any notes.
