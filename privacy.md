@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**FleetOptima LLC** · Last updated: November 3, 2026
+**FleetOptima LLC** · Last updated: November 5, 2026
 
 This is how FleetOptima handles your information, in plain words. If something here doesn't answer your question, email **support@fleetoptima.org** and a real person answers.
 
@@ -24,7 +24,7 @@ This is how FleetOptima handles your information, in plain words. If something h
 
 ## What's stored on your device
 - **Staying logged in:** one cookie that keeps you logged in on that device. Page code can't read it, it's only sent to our login service, and it ends when you log out, use **Sign out everywhere**, change your password, or don't use FleetOptima on that device for 30 days.
-- **App settings:** your light/dark choice, which help notes you've closed, and similar small settings, kept in your browser.
+- **App settings:** your light/dark choice, which help notes you've closed, how many times you've opened Home today (so the greeting shrinks after the first), and similar small settings, kept in your browser.
 
 No advertising cookies, no tracking cookies, no third-party analytics.
 
