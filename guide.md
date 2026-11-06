@@ -91,6 +91,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 - **An empty list** says so and has a button to add the first one.
 - **Saved?** A bar at the bottom says so ("Work Order added", "Asset saved").
 - **Missing something in a dropdown?** Most dropdowns end with **New ...** (like **New User**). Make it right there, and when you come back it's already picked. *Why:* so you never have to abandon a half-filled form just because one choice was missing.
+- **Only one choice?** A dropdown with just one option picks it for you (a tenant with one apartment, a company with one type). *Why:* there's nothing to decide, so you shouldn't have to tap it.
 - **There's more than one way to do most things.** You can start a work order from the home page (**Quick actions → New Work Order**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). Use whichever feels natural. They all do the same thing behind the scenes.
 - You can change stock from a part, or by pulling parts on a work order. You can log a reading from the asset's **Readings**, or when you complete a job. <!-- for: fleet -->
 
@@ -231,6 +232,9 @@ Open their user and tap **Sign out everywhere**. It asks first, then logs them o
 **Tenant moved out?** Take them off the apartment (**Assigned people**). They stop seeing it and can't send new requests on it, but they still see the ones they already sent, so they can check how those turned out. <!-- for: landlord -->
 
 ### Your account
+**Account menu → Account settings → Your details** has your **name**, **username** (what you log in with) and **email**. Change any of them and tap **Save**. Your email is where email alerts and password links go, so if you don't have one there, add it. <!-- for: all -->
+*Why you can change these yourself:* a typo in your name, a new email, a username you'd rather have. None of that should need someone else to fix it.
+
 **Account menu → Account settings → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there. Changing it logs you out on your other devices.
 
 **Sign out everywhere** (same page) logs you out on every phone and computer, this one too. Use it if you lost a phone or logged in somewhere you shouldn't stay logged in.
@@ -245,6 +249,8 @@ Open their user and tap **Sign out everywhere**. It asks first, then logs them o
 - **Updates on what I reported**: an email when a work order you reported is **started**, **finished** or **cancelled** (not for notes).
 
 You **never get an email about something you did yourself.** Every alert has a **turn these off** link at the bottom that works without logging in.
+
+**No email on your account?** Then alerts have nowhere to go, and **Email alerts** says so at the top, with a link to **Account settings** to add one.
 
 Everything starts **off** for fleets: turn on what you want. <!-- for: fleet -->
 For landlords, **New Maintenance Requests** starts **on** (all of them). Tenants can turn on **Updates on what I reported** to hear when someone's on it. <!-- for: landlord -->
@@ -385,13 +391,14 @@ As you type the **Title**, the app suggests names your company already used ("oi
 As you type the **Title**, the app suggests titles already used on your requests. Tap one to use it, or keep typing something new. <!-- for: landlord -->
 
 ### Urgent
-**How urgent?** is **Normal** or **Urgent** ("It can't wait: something that stops work"). <!-- for: fleet -->
-**How urgent?** is **Normal** or **Urgent** ("It can't wait: no heat, no water, or something that stops work"). <!-- for: landlord -->
+**How urgent?** is **Normal** or **Urgent**. <!-- for: fleet -->
+**How urgent?** is **Normal** or **Urgent** ("It can't wait: no heat, no water, or a big leak"). <!-- for: landlord -->
 - **Picking Urgent shows a red note: gas leak, fire, flooding, or someone hurt? Call 911 (or your gas or power company) first.** A maintenance request isn't an emergency line. <!-- for: landlord -->
 - An urgent job nobody has started has a red **URGENT** chip, sits at the top of the list, and is counted first on Home ("1 urgent").
 - Once someone starts it, it goes back to its normal place in line: it's being handled.
 - **Mark urgent / Not urgent** in the job's **⋯** menu (for people who work jobs). The job's history says who changed it.
-- Email alerts can be set to **Only urgent ones** (see **Email alerts**), and urgent emails say **URGENT** in the subject.
+- Email alerts can be set to **Only urgent ones** (see **Email alerts**), and urgent emails say **Urgent** in the subject.
+- **On the job's page**, an urgent job that isn't finished yet has a **red outline** around its name and a red **URGENT** tag, even after someone starts it. It goes back to normal when it's done or someone marks it **Not urgent**.
 
 ### Where a job is (its status)
 | Status | Meaning |
@@ -414,6 +421,9 @@ As you type the **Title**, the app suggests titles already used on your requests
 When someone outside your company does the work, log it on the job: **Services → Add service**.
 - **Who did it** ("Joe's Plumbing"), **what they did**, and **what it cost**.
 - **Don't have the receipt yet?** Leave the cost blank. The service says **cost needed**, and Costs lists it under **Missing a cost: find the receipt**. Tap **Set cost** when it turns up.
+- **Already used them before?** Start typing and the names you've used come up ("d" offers **Dave's Plumbing**). Tap it instead of typing it again.
+- **The same name typed differently is one vendor**: "Dave's Plumbing", "daves plumbing" and "DAVE'S PLUMBING." all become the first spelling you used, so Costs doesn't split one plumber into three.
+- **Edit** (on the service) fixes the name, what they did, or the cost. The job's history keeps the old values.
 - **Remove** takes it off if it was a mistake. It comes out of Costs, and the job's history keeps a note of it.
 - A job can be finished with only services and no parts.
 
@@ -486,8 +496,9 @@ Each rule on an asset shows **Next** (when it's due), **Last** (when it was done
 
 **When it's due, the work order makes itself**, straight onto the list, called by the job's name, with "Auto-generated by maintenance rule" in its details. Nobody approves it first. There's only ever **one at a time**: until that job is finished, the rule doesn't make another. If you get **New Work Order** emails, you get one for these too.
 
-Miles and hours are checked the moment someone logs a reading. Dates are checked once a day, and whenever someone opens an asset's Maintenance. *Why "coming up" first:* so a due date is never a surprise. <!-- for: fleet -->
-Dates are checked once a day, and whenever someone opens a property's Maintenance. *Why "coming up" first:* so a due date is never a surprise. <!-- for: landlord -->
+Miles and hours are checked the moment someone logs a reading. Dates are checked **every morning at 7 AM Central** (8 AM Eastern), and whenever someone opens an asset's Maintenance. *Why "coming up" first:* so a due date is never a surprise. <!-- for: fleet -->
+Dates are checked **every morning at 7 AM Central** (8 AM Eastern), and whenever someone opens a property's Maintenance. *Why "coming up" first:* so a due date is never a surprise. <!-- for: landlord -->
+*Why the morning:* a work order (and its email) made at midnight just sits there or wakes someone up. At 7 it's waiting when the day starts.
 
 ### When the job's done
 **Complete** the work order. The rule starts counting again **from when it was actually done**: due at 3,000 miles, done at 4,000, next one at 7,000. <!-- for: fleet -->
