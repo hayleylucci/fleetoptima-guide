@@ -8,7 +8,7 @@ These are the rules for using FleetOptima. By creating an account or using Fleet
 FleetOptima is software for tracking the things your business owns and keeps running (vehicles, equipment, tools, property and so on), the work done on them, the parts used and what it all costs. We run it on the internet; you use it in a web browser.
 
 ## 2. Trial, price and the beta
-- **Every new company starts with a free 14-day trial**, for up to 10 machines and 10 small tools. No card needed to start. <!-- for: fleet -->
+- **Every new company starts with a free 14-day trial**, for up to 10 machines and 20 small tools. No card needed to start. <!-- for: fleet -->
 - **After the trial, FleetOptima is $8 per machine and $1 per small tool, per month.** A machine is anything with a VIN or a meter; a small tool has neither. We'll ask you to pick a plan before your trial ends, and nothing is charged without you agreeing to it. <!-- for: fleet -->
 - **Something tracked as a small tool that's really a machine** (it has a VIN or a meter) counts as a machine, and we may bill it as one. <!-- for: fleet -->
 - **Need more time or more assets during your trial?** Get in touch at support@fleetoptima.org. <!-- for: fleet -->
