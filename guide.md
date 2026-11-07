@@ -34,8 +34,8 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 ### Starting free (signing up your company)
 **Login → New here? Start free.** Type your business name, your name, a username, your email and a password, and tick the box to agree to the **Terms of Service** and **Privacy Policy** (both open if you tap them). We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
 
-- **Free for 14 days**, for up to 10 assets. No card to start.
-- **After that it's $8 per asset per month.** We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
+- **Free for 14 days**, for up to 10 machines and 25 small tools. No card to start.
+- **After that it's $8 per machine and $1 per small tool, per month.** A machine has a VIN or a meter (trucks, trailers, mowers, chippers, generators). A small tool has neither (saws, pole pruners, blowers, trimmers): add it with the **Tool** asset type. We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
 - **Need more time or more assets during the trial?** Get in touch.
 - **Trial over and no plan yet?** Everything goes read-only: you can still see it all (and ask us for a copy), you just can't add or change anything until you pick a plan.
 - More in **Billing and your plan** below.
@@ -574,12 +574,12 @@ Some things aren't a switch you can flip yourself, because your company isn't se
 
 <!-- for: fleet -->
 ### The free trial
-Every new company gets **14 days free**, for up to **10 assets**, with no card. The account menu shows how many days are left (under your name). In the last **5 days**, a note shows on Home with **Pick a plan** and **Need more time or assets? Email us**, and your Admins get an email 5 days before, the day before, and when it ends.
+Every new company gets **14 days free**, for up to **10 machines** and **25 small tools**, with no card. The account menu shows how many days are left (under your name). In the last **5 days**, a note shows on Home with **Pick a plan** and **Need more time or assets? Email us**, and your Admins get an email 5 days before, the day before, and when it ends.
 
-**Need longer, or more than 10 assets to try it properly?** Tap **Email us** (it fills in your company name) and tell us. We'll sort it out.
+**Need longer, or more room to try it properly?** Tap **Email us** (it fills in your company name) and tell us. We'll sort it out.
 
 ### Picking a plan
-FleetOptima is **$8 per asset per month**. On **Billing & plan**, pick how many assets you want to pay for with **−** and **+** (it shows the monthly total), then tap **Pick a plan**. You go to our payment company's secure page (Stripe) to enter your card, then come back here. It takes a few seconds to say **Paid plan**. <!-- for: fleet -->
+FleetOptima is **$8 per machine** and **$1 per small tool**, per month. On **Billing & plan**, pick how many machines and how many small tools you want to pay for with **−** and **+** (it shows the monthly total), then tap **Pick a plan**. You go to our payment company's secure page (Stripe) to enter your card, then come back here. It takes a few seconds to say **Paid plan**. <!-- for: fleet -->
 On **Billing & plan**, pick how many properties you want to pay for with **−** and **+** (it shows the monthly total and the price), then tap **Pick a plan**. You go to our payment company's secure page (Stripe) to enter your card, then come back here. It takes a few seconds to say **Paid plan**. <!-- for: landlord -->
 
 - You can't pick fewer than the assets you already have. To pay for fewer, retire (delete) the ones you don't use first, then come back. Nothing is ever deleted for you.
