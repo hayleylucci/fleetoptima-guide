@@ -34,7 +34,7 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 ### Starting free (signing up your company)
 **Login → New here? Start free.** Type your business name, your name, a username, your email and a password, and tick the box to agree to the **Terms of Service** and **Privacy Policy** (both open if you tap them). We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
 
-- **Free for 14 days**, for up to 10 machines and 25 small tools. No card to start.
+- **Free for 14 days**, for up to 10 machines and 10 small tools. No card to start.
 - **After that it's $8 per machine and $1 per small tool, per month.** A machine has a VIN or a meter (trucks, trailers, mowers, chippers, generators). A small tool has neither (saws, pole pruners, blowers, trimmers): add it with the **Tool** asset type. We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
 - **Need more time or more assets during the trial?** Get in touch.
 - **Trial over and no plan yet?** Everything goes read-only: you can still see it all (and ask us for a copy), you just can't add or change anything until you pick a plan.
@@ -574,7 +574,7 @@ Some things aren't a switch you can flip yourself, because your company isn't se
 
 <!-- for: fleet -->
 ### The free trial
-Every new company gets **14 days free**, for up to **10 machines** and **25 small tools**, with no card. The account menu shows how many days are left (under your name). In the last **5 days**, a note shows on Home with **Pick a plan** and **Need more time or assets? Email us**, and your Admins get an email 5 days before, the day before, and when it ends.
+Every new company gets **14 days free**, for up to **10 machines** and **10 small tools**, with no card. The account menu shows how many days are left (under your name). In the last **5 days**, a note shows on Home with **Pick a plan** and **Need more time or assets? Email us**, and your Admins get an email 5 days before, the day before, and when it ends.
 
 **Need longer, or more room to try it properly?** Tap **Email us** (it fills in your company name) and tell us. We'll sort it out.
 
