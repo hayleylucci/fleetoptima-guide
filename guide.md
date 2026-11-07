@@ -210,7 +210,7 @@ Everyone only ever sees their own company's things and people. Tap a person to s
 Everyone has both. The **Name** is what everybody sees: on lists, on work orders, in history, and in Home's hello. The **Username** is what they type to log in (they can also log in with their email). They're separate on purpose: fix a name or add a last name (**Matthew** to **Matthew Smith**) and their login stays the same. Only change the **Username** box on **Edit** if they should log in with something new, and tell them when you do.
 
 ### Adding someone
-**Home → Users → + New.** Fill in their **Name**, a **Username** (what they log in with), their **Email** (optional), their **Role** and their **Group**. Then pick **How will they sign in?**
+**Home → Users → + New.** Fill in their **Name**, a **Username** (what they log in with), their **Email** (optional), their **Role** (it starts on **User**, the least access, so making someone an Admin is always on purpose) and their **Group**. Then pick **How will they sign in?**
 
 - **Send an invite** (the usual way): no password from you. After you save, an invite pops up with a **QR code** and a **Copy link** button, and if they have an email, it's emailed to them too. They open it, check their name and username (you can leave the username blank and let them pick), choose a password, and they're in. The invite works once and lasts **7 days**. Making a new one cancels the old one.
 - **I'll set their password:** a password box shows. Type one and tell them yourself.
@@ -671,6 +671,9 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "Can't reach the server right now." | Check your internet, then try again. |
 | "Your session expired. Please log in again." | You haven't used FleetOptima on this device in 30 days, your password changed, or someone signed you out everywhere. Log in again and carry on. |
 | "You don't have permission to do that." | Your groups don't allow this. Ask your Admin (see **Groups and permissions**). |
+| "You don't have access to this page." | Your groups don't include this page. Ask your Admin (see **Groups and permissions**). |
+| "...is turned off for your organization." | Your company switched that feature off. An Admin can turn it back on in **Org settings → Features**. |
+| "Wrong username or password." | Check both and try again. Ten wrong tries in a row locks the account for 15 minutes. |
 | "Error 108: Too many wrong passwords..." | Ten wrong tries in a row. Wait 15 minutes, or ask your Admin. |
 | "That link has expired or was already used." | Invite and reset links work once and run out. Ask for a new one (or use **Forgot password**). |
 | "That password isn't strong enough." | At least 6 characters, with an uppercase letter, a lowercase letter, a number and a symbol. |
