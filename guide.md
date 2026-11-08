@@ -35,7 +35,7 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 **Login → New here? Start free.** Type your business name, your name, a username, your email and a password, and tick the box to agree to the **Terms of Service** and **Privacy Policy** (both open if you tap them). We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
 
 - **Free for 14 days**, for up to 10 machines and 20 small tools. No card to start.
-- **After that it's $8 per machine and $1 per small tool, per month.** A machine has a VIN or a meter (trucks, trailers, mowers, chippers, generators). A small tool has neither (saws, pole pruners, blowers, trimmers): add it with the **Tool** asset type. We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
+- **After that it's $8 per machine and $1 per small tool, per month.** A small tool is handheld (saws, pole pruners, blowers, trimmers): add it with the **Tool** asset type. Everything else is a machine: anything with a VIN or a meter (trucks, trailers, mowers, chippers, generators), and bigger equipment like compressors, ovens and spray booths. We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
 - **Need more time or more assets during the trial?** Get in touch.
 - **Trial over and no plan yet?** Everything goes read-only: you can still see it all (and ask us for a copy), you just can't add or change anything until you pick a plan.
 - More in **Billing and your plan** below.
@@ -185,7 +185,7 @@ A VIN that fails the check digit doesn't look anything up. Compare it with the p
 Every asset is one type, and the types come built in, so there's nothing to set up: <!-- for: fleet -->
 - **Vehicle**: make, model, year and miles, with a VIN. <!-- for: fleet -->
 - **Equipment**: make, model, year and hours, with a serial number. <!-- for: fleet -->
-- **Tool**: small tools like saws, pole pruners, blowers and trimmers. No VIN, no meter, $1 a month instead of $8. <!-- for: fleet -->
+- **Tool**: handheld small tools like saws, pole pruners, blowers and trimmers. No VIN, no meter, $1 a month instead of $8. <!-- for: fleet -->
 Every property is the **Property** type, already set up for you: just a name and an address. <!-- for: landlord -->
 
 **Need another kind?** Email us and we'll add it, usually the same day. That's also how you get one your maintenance rules can aim at, like "Bucket truck". <!-- for: fleet -->
