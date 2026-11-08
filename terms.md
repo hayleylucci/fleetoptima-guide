@@ -1,6 +1,6 @@
 # Terms of Service
 
-**FleetOptima LLC** · Last updated: November 6, 2026
+**FleetOptima LLC** · Last updated: November 7, 2026
 
 These are the rules for using FleetOptima. By creating an account or using FleetOptima, you agree to them. If you sign up for a company, you're agreeing for that company, and you're telling us you're allowed to.
 
@@ -8,8 +8,9 @@ These are the rules for using FleetOptima. By creating an account or using Fleet
 FleetOptima is software for tracking the things your business owns and keeps running (vehicles, equipment, tools, property and so on), the work done on them, the parts used and what it all costs. We run it on the internet; you use it in a web browser.
 
 ## 2. Trial, price and the beta
-- **Every new company starts with a free 14-day trial**, for up to 10 assets. No card needed to start. <!-- for: fleet -->
-- **After the trial, FleetOptima is $8 per asset per month.** We'll ask you to pick a plan before your trial ends, and nothing is charged without you agreeing to it. <!-- for: fleet -->
+- **Every new company starts with a free 14-day trial**, for up to 10 machines and 20 small tools. No card needed to start. <!-- for: fleet -->
+- **After the trial, FleetOptima is $8 per machine and $1 per small tool, per month.** A machine is anything with a VIN or a meter; a small tool has neither. We'll ask you to pick a plan before your trial ends, and nothing is charged without you agreeing to it. <!-- for: fleet -->
+- **Something tracked as a small tool that's really a machine** (it has a VIN or a meter) counts as a machine, and we may bill it as one. <!-- for: fleet -->
 - **Need more time or more assets during your trial?** Get in touch at support@fleetoptima.org. <!-- for: fleet -->
 - **If your trial ends without a plan,** your account becomes **read-only**: you can still see everything (and ask us for a copy of it), but you can't add or change anything until you pick a plan. <!-- for: fleet -->
 - **Your price, and any free trial, are what we agreed with you when we set up your account.** **Billing & plan** in the app shows them, and nothing is charged without you agreeing to it. <!-- for: landlord -->
