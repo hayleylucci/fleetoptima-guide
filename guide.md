@@ -35,7 +35,7 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 **Login → New here? Start free.** Type your business name, your name, a username, your email and a password, and tick the box to agree to the **Terms of Service** and **Privacy Policy** (both open if you tap them). We email you a link: open it to **verify your email**, then log in. You're the company's **Admin**, and you can add your crew right away.
 
 - **Free for 14 days**, for up to 10 machines and 20 small tools. No card to start.
-- **After that it's $8 per machine and $1 per small tool, per month.** A machine has a VIN or a meter (trucks, trailers, mowers, chippers, generators). A small tool has neither (saws, pole pruners, blowers, trimmers): add it with the **Tool** asset type. We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
+- **After that it's $8 per machine and $1 per small tool, per month.** A small tool is handheld (saws, pole pruners, blowers, trimmers): add it with the **Tool** asset type. Everything else is a machine: anything with a VIN or a meter (trucks, trailers, mowers, chippers, generators), and bigger equipment like compressors, ovens and spray booths. We'll ask you to pick a plan before the trial ends. Nothing is charged until you agree.
 - **Need more time or more assets during the trial?** Get in touch.
 - **Trial over and no plan yet?** Everything goes read-only: you can still see it all (and ask us for a copy), you just can't add or change anything until you pick a plan.
 - More in **Billing and your plan** below.
@@ -52,7 +52,7 @@ Below it, Home is grouped into sections:
 - **Maintenance**: what's **due** (red) or **coming up** (amber), most urgent first, if you're allowed to see maintenance. Tap a due one to open its work order, or a coming-up one to open the asset. **See all** lists every one. It's not there when nothing is due.
 - **Fleet**: **Assets**, **Work Orders**, **Parts** and **Costs** (Costs only for people allowed to see prices). <!-- for: fleet -->
 - **Properties**: **Properties**, **Maintenance Requests** and **Costs** (Costs only for people allowed to see prices). <!-- for: landlord -->
-- **Admin**: **Users**, **Groups** and **Asset Types**. <!-- for: fleet -->
+- **Admin**: **Users** and **Groups**. <!-- for: fleet -->
 - **Admin**: **Users** and **Groups**. <!-- for: landlord -->
 
 You only see the tiles your groups let you use (see **Groups and permissions**), and only the parts your company has turned on (see **Settings for your whole company**). A tile opens that list. To add something new, open its list and tap **+ New** (bottom right).
@@ -182,13 +182,15 @@ A VIN that fails the check digit doesn't look anything up. Compare it with the p
 
 <!-- for: fleet -->
 ### Asset types
-**Home → Asset Types.** Every asset is one type. You start with **Vehicle** and **Equipment**, and you can add your own (Trailer, Forklift, Generator...). A type has:
-- **Name**
-- **What is it?**: **A machine** (make, model, year, miles or hours) or **A place** (just a name and an address: a shop, a yard; no make, no meter). The asset's form and page only show what its type uses.
-- **Default measuring unit**: what new assets of this type count in (Vehicle → Miles, Equipment → Hours).
-- **What's its ID called?**: what the ID number is called on the form, like **VIN** or **Serial Number**. New types start as **Serial Number**; change it to **VIN** for vehicles.
+Every asset is one type, and the types come built in, so there's nothing to set up: <!-- for: fleet -->
+- **Vehicle**: make, model, year and miles, with a VIN. <!-- for: fleet -->
+- **Equipment**: make, model, year and hours, with a serial number. <!-- for: fleet -->
+- **Tool**: handheld small tools like saws, pole pruners, blowers and trimmers. No VIN, no meter, $1 a month instead of $8. <!-- for: fleet -->
+Every property is the **Property** type, already set up for you: just a name and an address. <!-- for: landlord -->
 
-*Why asset types:* they're presets. Pick "Equipment" and the form already knows it counts hours and asks for a serial number, so you're not setting the same things on every machine. Make a type for anything you have a lot of.
+**Need another kind?** Email us and we'll add it, usually the same day. That's also how you get one your maintenance rules can aim at, like "Bucket truck". <!-- for: fleet -->
+
+The type only picks where a new asset starts. Any asset can count **miles**, **hours**, or anything else you track: change its measuring unit on the asset itself. <!-- for: fleet -->
 
 ---
 
@@ -329,7 +331,7 @@ You only see the buttons you can use. Without Delete there's no Delete button; w
 | **Mileage** | Logging a reading (miles, hours, whatever the asset counts). | <!-- for: fleet -->
 | **Maintenance (what's due)** | Seeing an asset's maintenance and what's due (View); saying when it was really done, and turning a rule off for one asset (Edit). |
 | **Maintenance rules** | Setting up the rules themselves: adding, changing (for all, or one asset's own interval) and removing them. |
-| **Asset Types** | The kinds of assets and their measuring units. | <!-- for: fleet -->
+| **Asset Types** | Adding measuring units (miles, hours...). The types themselves come built in. | <!-- for: fleet -->
 | **Users** | People: adding, changing, removing, and their groups. |
 | **Groups** | Making and changing groups. |
 | **Settings** | **Org settings** in the account menu (Features, and VIN settings). | <!-- for: fleet -->

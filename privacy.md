@@ -1,12 +1,12 @@
 # Privacy Policy
 
-**FleetOptima LLC** · Last updated: November 6, 2026
+**FleetOptima LLC** · Last updated: November 10, 2026
 
 This is how FleetOptima handles your information, in plain words. If something here doesn't answer your question, email **support@fleetoptima.org** and a real person answers.
 
 ## The short version
 - Your company's data is **your company's**. We use it to run FleetOptima for you, and that's it.
-- **We don't sell your data, show you ads, or use tracking or analytics tools.**
+- **We don't sell your data, show you ads, or use tracking or analytics tools in the app.** Our public website, fleetoptima.org, does use analytics; see **Our website** below.
 - A few outside services do part of the work (listed below), and each one only gets what it needs.
 - You can ask for a copy of your data, or for it to be deleted, at any time.
 - **If you're a tenant:** your landlord's account holds what you send, and your landlord can see it. See **If you're a tenant** below. <!-- for: landlord -->
@@ -36,7 +36,10 @@ This is how FleetOptima handles your information, in plain words. If something h
 - **Staying logged in:** one cookie that keeps you logged in on that device. Page code can't read it, it's only sent to our login service, and it ends when you log out, use **Sign out everywhere**, change your password, or don't use FleetOptima on that device for 30 days.
 - **App settings:** your light/dark choice, which help notes you've closed, how many times you've opened Home today (so the greeting shrinks after the first), and similar small settings, kept in your browser.
 
-No advertising cookies, no tracking cookies, no third-party analytics.
+No advertising cookies, no tracking cookies, no third-party analytics in the app.
+
+## Our website
+Our public website, **fleetoptima.org** (the home page and the free maintenance schedules), uses **Google Analytics** and **Microsoft Clarity** so we can see which pages people visit, where they came from, and how they scroll and click. These tools may set cookies in your browser on the website, and they record the pages you view, your clicks and scrolling, your device and browser, and your rough location. **They never run inside the FleetOptima app, and they never see anything you enter in it.**
 
 ## Outside services we use
 | Service | What it does for us | What it gets |
@@ -46,7 +49,9 @@ No advertising cookies, no tracking cookies, no third-party analytics.
 | **Microsoft Azure Communication Services** | Sends our emails (invites, password links, email checks, email alerts) | Your name, email address, and the email's contents |
 | **NHTSA** (U.S. National Highway Traffic Safety Administration) | Looks up vehicle details from a VIN | The VIN, sent from your browser | <!-- for: fleet -->
 | **Google** | Serves the app's fonts and drawing engine when the app loads | Your IP address and browser info, like any website you load files from |
-| **GitHub** | Hosts the user guide the app shows you | Your IP address and browser info, when you open Help |
+| **GitHub** | Hosts the user guide the app shows you, and our public website | Your IP address and browser info, when you open Help or visit the website |
+| **Google Analytics** | Counts visits to our public website (not the app) | On fleetoptima.org only: pages viewed, where you came from, device and browser, rough location |
+| **Microsoft Clarity** | Shows us how people use our public website (not the app) | On fleetoptima.org only: clicks, scrolling and mouse movement, device and browser, rough location. Anything typed on the website is hidden from it |
 
 We don't give or sell your information to anyone else, except if the law makes us (for example, a valid court order), and we'll tell you if we're allowed to.
 
