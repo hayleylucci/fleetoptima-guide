@@ -16,13 +16,14 @@ Log in with your **username or your email**, and your password (press **Enter** 
 - **New here?** Your landlord adds you and you get an **invite** by email, or a QR code to scan (see **Adding someone** below). <!-- for: landlord -->
 - **Forgot your password?** Tap **Forgot password?**, type your username or email, and we'll email you a link to pick a new one. The link works once and lasts an hour. Your old password keeps working until you use it, so if you didn't ask for it, just ignore the email.
 - **No email on your account?** Ask your Admin to tap **Reset password** on your user. They'll get a link or a QR code for you.
+- **Too many tries in a minute?** Wait a minute and try again. A wrong username and a wrong password get the same message, so nobody can use the login page to find out who has an account.
 - **The first time you log in**, you're asked to agree to the **Terms of Service** and **Privacy Policy** (tap either to read it). You're asked again only if they change.
 
 ### Staying logged in
 Once you log in, **you stay logged in on that phone or computer**, even if you close it and come back tomorrow. You're only asked again if you haven't opened FleetOptima there in **30 days**, if you **log out**, or if your password changes.
 
 - **Log out** (account menu) ends it on that device only.
-- **Sign out everywhere** (Account settings) ends it on every phone and computer at once, including the one in your hand.
+- **Sign out everywhere** (My settings) ends it on every phone and computer at once, including the one in your hand.
 - **Changing your password** logs you out everywhere else, but not where you changed it.
 
 *Why:* a mechanic with greasy hands shouldn't have to type a password every morning, and a lost phone shouldn't stay logged in forever. Sign out everywhere fixes that in one tap. <!-- for: fleet -->
@@ -46,14 +47,23 @@ Once you log in, **you stay logged in on that phone or computer**, even if you c
 ### Home
 The top of Home says hello (by your name) and shows **what needs you today**: how many **urgent** jobs nobody has started yet (first, in red), how many **open jobs** there are, and what maintenance is **due** or **coming up**. Tap **urgent** or **open jobs** to see just those work orders, or the maintenance count to see that list. With nothing waiting, it says **All caught up**. The first time you open FleetOptima each day it's a big card; after that it shrinks to one slim line so it's out of your way.
 
+**Getting started.** A new company also gets a short checklist under the hello: **Add your assets**, **Add your crew**, **Set up maintenance**, and **Add your parts** and **Set labor rates** if you use those. Tap a step to go where you do it. It ticks itself off when the real thing exists, whoever does it: a mechanic adds the machines, and the owner sees that step done. <!-- for: fleet -->
+**Getting started.** A new company also gets a short checklist under the hello: **Add your properties**, **Add your crew**, **Set up maintenance**, and any extras you use. Tap a step to go where you do it. It ticks itself off when the real thing exists, whoever does it. <!-- for: landlord -->
+- **Admins** can **Skip** a step for everyone. Skipping **parts** or **labor** asks if you want to turn that feature off too, so it's out of everyone's way. Turn it back on any time in **Org settings → Features**. Nothing is deleted.
+- **Everyone else** can **Hide for me**, which hides the step just for you.
+- You only see steps you can do. Once every step is done or skipped, the checklist is gone for good.
+
+*Why:* a new account is an empty screen. The checklist says what to do first, and gets out of the way once it's done.
+
 Below it, Home is grouped into sections:
 - **Quick actions**: the everyday jobs, as wide buttons on top. Right now that's **New Work Order** (and **Update miles** if you run a vehicle). <!-- for: fleet -->
 - **Quick actions**: **New Maintenance Request**, as a wide button on top. <!-- for: landlord -->
 - **Maintenance**: what's **due** (red) or **coming up** (amber), most urgent first, if you're allowed to see maintenance. Tap a due one to open its work order, or a coming-up one to open the asset. **See all** lists every one. It's not there when nothing is due.
-- **Fleet**: **Assets**, **Work Orders**, **Parts** and **Costs** (Costs only for people allowed to see prices). <!-- for: fleet -->
-- **Properties**: **Properties**, **Maintenance Requests** and **Costs** (Costs only for people allowed to see prices). <!-- for: landlord -->
-- **Admin**: **Users** and **Groups**. <!-- for: fleet -->
-- **Admin**: **Users** and **Groups**. <!-- for: landlord -->
+- **Running low**: parts at or below their **Reorder at** amount (see **Running low** under **Parts and stock**), if your company keeps parts.
+- **Fleet**: **Assets**, **Work Orders**, **Parts** and **Costs** (Costs only for people allowed to see prices). A number on **Work Orders** counts the open jobs. <!-- for: fleet -->
+- **Properties**: **Properties**, **Maintenance Requests** and **Costs** (Costs only for people allowed to see prices). A number on **Maintenance Requests** counts the open ones. <!-- for: landlord -->
+
+**Users** and **Groups** aren't on Home: they're in **Org settings** (account menu), with the rest of your company's settings.
 
 You only see the tiles your groups let you use (see **Groups and permissions**), and only the parts your company has turned on (see **Settings for your whole company**). A tile opens that list. To add something new, open its list and tap **+ New** (bottom right).
 
@@ -72,16 +82,21 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 ### The top bar
 - The **?** opens this guide at the part about the page you're on.
 - The **megaphone** sends us feedback (see below).
-- **Your initial** in a circle opens the **account menu**: your name and role, **Account settings** (change your password, sign out everywhere, delete your account), **App settings**, **Org settings** (for anyone allowed to change Settings), **Help** and **Log out**.
-- **App settings** picks the look (light, dark, or whatever your phone or computer is set to) and your own **Email alerts** (see **Email alerts** below).
+- **Your initial** in a circle opens the **account menu**: your name and role, **My settings**, **Org settings** (if there's anything in it you can use), **Help**, the **Privacy Policy** and **Terms of Service**, and **Log out**.
+- **My settings** is everything about *you*: your details, your password, sign out everywhere, delete your account, the look (light, dark, or whatever your phone or computer is set to), your own **Email alerts**, and whether **Running low** shows on your Home. See **Your account** below.
+- **Org settings** is everything about *your company*: **Users**, **Groups**, **Who can do what**, **Features**, **VIN settings** and **Billing & plan**. You only see the ones you're allowed to use. See **Settings for your whole company**. <!-- for: fleet -->
+- **Org settings** is everything about *your company*: **Users**, **Groups**, **Who can do what**, **Features** and **Billing & plan**. You only see the ones you're allowed to use. See **Settings for your whole company**. <!-- for: landlord -->
+
+*Why two:* "me" and "the company" are different questions. A tenant changing their password shouldn't have to look past the company's billing to find it, and nobody has to remember which menu holds the team list. <!-- for: landlord -->
+*Why two:* "me" and "the company" are different questions. A mechanic changing their password shouldn't have to look past the company's billing to find it, and nobody has to remember which menu holds the team list. <!-- for: fleet -->
 
 ### Everywhere
-- **Refreshed a page?** The back arrow still works: it takes you up one level (a work order → the work order list → Home).
+- **The back arrow** (top left, on a small colored square) goes up one level. **Refreshed a page?** It still works: it takes you up one level (a work order → the work order list → Home).
 - **Every page has its own web address.** For example, `/assets` is the asset list, `/assets/new` is a new asset, `/work-orders/123` is one work order. You can bookmark a page or send someone a link to it. <!-- for: fleet -->
 - **Every page has its own web address.** You can bookmark a page or send someone a link to it. <!-- for: landlord -->
 - **The back button walks back one page at a time**, like any website. On the home page, the first back shows **"Press back again to exit"**, and the second one leaves the app.
-- **Which version am I on?** The small grey number at the bottom of Home and the login page (like **v0.6.3**). Tap it to see **What's new**: every update, newest first, with a link to the part of this guide that explains each change. It's also under **Org settings → What's new**. Hold the number down to see the exact build, if we ever ask.
-- **After an update**, a note shows on Home once: **"Updated to v0.6.3. See what changed."** Tap **What's new** to read it, or **Got it** to hide it until the next update. Don't want these notes? Turn off **Show a note on Home after an update** on the What's new page.
+- **Which version am I on?** The small grey number at the bottom of Home and the login page (like **v0.6.3**). Tap it to see **What's new**: every update, newest first, with a link to the part of this guide that explains each change. It's also on the **Help** page: **What's new** at the top. Hold the number down to see the exact build, if we ever ask.
+- **After an update**, a note shows on Home once: **"Updated to v0.6.3. See what changed."** Tap **What's new** to read it, or **Got it** to hide it until the next update. Someone who just joined doesn't get one on their first day: it starts with the next update. Don't want these notes? Turn off **Show a note on Home after an update** on the What's new page.
 - **"A new version of FleetOptima is ready."** When we update FleetOptima while you have it open, a thin bar shows across the top. Tap **Reload** to get the new version (anything you already saved is safe), or **Later** to finish what you're doing first. *Why:* an open page keeps running the old version until it reloads, and old and new don't always get along.
 - **Opening a link to something that was deleted, or that isn't yours to see,** shows a **Not found** page with a button to go home.
 - **Something bugging you? Yell at us.** The megaphone button at the top of every page opens one big box. Say whatever you want, however you want: cussing and CAPS LOCK welcome. The app adds which page you were on and which version you're running, so you don't have to explain any of that.
@@ -89,7 +104,7 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 - **Every list has a search box** at the top. Type any part of a name or what's under it ("truck 3", "oil"), and only the matches stay. Every word you type has to match. **Show everything** (or the **x** in the box) brings the whole list back. <!-- for: fleet -->
 - **Every list has a search box** at the top. Type any part of a name or what's under it ("1A", "sink"), and only the matches stay. Every word you type has to match. **Show everything** (or the **x** in the box) brings the whole list back. <!-- for: landlord -->
 - **An empty list** says so and has a button to add the first one.
-- **Saved?** A bar at the bottom says so ("Work Order added", "Asset saved").
+- **Saved?** A bar at the bottom says so ("Work Order added", "Asset saved"), and Home and every list catch up right away: no refreshing needed.
 - **Missing something in a dropdown?** Most dropdowns end with **New ...** (like **New User**). Make it right there, and when you come back it's already picked. *Why:* so you never have to abandon a half-filled form just because one choice was missing.
 - **Only one choice?** A dropdown with just one option picks it for you (a tenant with one apartment, a company with one type). *Why:* there's nothing to decide, so you shouldn't have to tap it.
 - **There's more than one way to do most things.** You can start a work order from the home page (**Quick actions → New Work Order**), from the Work Orders list (**+ New**), or from an asset (**Create Work Order**). Use whichever feels natural. They all do the same thing behind the scenes.
@@ -107,6 +122,19 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 
 An asset is one vehicle or piece of equipment: "Truck 12," "the Bobcat." <!-- for: fleet -->
 A property is one place you look after: "Apt 1A," "the duplex on Elm," "the laundry room." <!-- for: landlord -->
+
+### The list
+Each row has a small **icon for its type** (a truck, equipment, a tool), its name, and under it **the type and its reading** ("Vehicle · 104,920 miles"). Anything without a meter just shows its type. The VIN is on the asset's own page. <!-- for: fleet -->
+Each row has a small **icon** (a house), its name, and under it its type. <!-- for: landlord -->
+
+A **dot** on the icon means it needs something:
+- **Red**: maintenance is **due**, or it has an **urgent** job nobody has finished.
+- **Amber**: maintenance is **coming up**, or it has an **open** job.
+- **No dot**: nothing waiting.
+
+You only get dots for what you're allowed to see: someone who can't see maintenance only gets dots for jobs.
+
+*Why:* you can spot the one that needs you without opening every one.
 
 ### Adding an asset
 **Home → Assets → + New.** Pick the **asset type** first: the form then shows only what that type uses. A **Vehicle** asks for a **VIN**, **Equipment** asks for a **Serial Number**, and a place (a shop, a yard) asks only for a name and an address. <!-- for: fleet -->
@@ -158,14 +186,14 @@ A header starts closed and doesn't load anything until you open it. Tap it again
 <!-- for: fleet -->
 ### What's on the form
 The form has two parts:
-- **The top is how it is right now:** nickname, asset type, the **unit** it counts in, and its **current reading**. The reading is named after the unit: **Current miles**, **Current hours** (just **Current reading** until a unit is picked).
-- **Specifications are what it is:** the VIN (or serial number), make, model and year. These hardly ever change once they're filled in.
+- **The top is how it is right now:** nickname, asset type, **Track by** (the unit it counts in: miles, hours...), and its **current reading**. The reading is named after the unit: **Current miles**, **Current hours** (just **Current reading** until a unit is picked).
+- **Specifications are what it is:** the **VIN or serial number**, make, model and year. These hardly ever change once they're filled in.
 
 **Who runs it** isn't on the form: assign people on the asset's page after you save it (see **Who uses it**).
 
 *Why split it:* the things you update all the time sit on top where your thumb is, and the things you set once stay out of the way.
 
-The **unit** fills in from the asset type: a Vehicle counts **Miles**, and you can change it (a truck with an hour meter, say). Things with no meter (a trailer, a building) count in **None**. *Why units matter:* maintenance runs on them. "Every 3,000 miles" and "every 250 hours" only work if the app knows which one this machine counts. Mileage or hours can be typed or **read off a photo of the dash** (camera button; see *Reading it off a photo*).
+**Track by** fills in from the asset type: a Vehicle counts **Miles**, and you can change it (a truck with an hour meter, say). Things with no meter (a trailer, a building) count in **None**. *Why units matter:* maintenance runs on them. "Every 3,000 miles" and "every 250 hours" only work if the app knows which one this machine counts. Mileage or hours can be typed or **read off a photo of the dash** (camera button; see *Reading it off a photo*).
 
 <!-- for: fleet -->
 ### The VIN fills in the rest
@@ -185,7 +213,7 @@ A VIN that fails the check digit doesn't look anything up. Compare it with the p
 Every asset is one type, and the types come built in, so there's nothing to set up: <!-- for: fleet -->
 - **Vehicle**: make, model, year and miles, with a VIN. <!-- for: fleet -->
 - **Equipment**: make, model, year and hours, with a serial number. <!-- for: fleet -->
-- **Tool**: handheld small tools like saws, pole pruners, blowers and trimmers. No VIN, no meter, $1 a month instead of $8. <!-- for: fleet -->
+- **Tool**: handheld small tools like saws, pole pruners, blowers and trimmers. No VIN, no meter (so their maintenance goes by time), $1 a month instead of $8. <!-- for: fleet -->
 Every property is the **Property** type, already set up for you: just a name and an address. <!-- for: landlord -->
 
 **Need another kind?** Email us and we'll add it, usually the same day. That's also how you get one your maintenance rules can aim at, like "Bucket truck". <!-- for: fleet -->
@@ -197,7 +225,7 @@ The type only picks where a new asset starts. Any asset can count **miles**, **h
 ## People
 
 ### Users and roles
-**Home → Users** lists everyone in your company. Each person has a **role**:
+**Account menu → Org settings → Users** lists everyone in your company. Each person has a **role**:
 | Role | Can |
 |---|---|
 | **User** | Whatever their **groups** allow (see **Groups and permissions** below). |
@@ -212,7 +240,7 @@ Everyone only ever sees their own company's things and people. Tap a person to s
 Everyone has both. The **Name** is what everybody sees: on lists, on work orders, in history, and in Home's hello. The **Username** is what they type to log in (they can also log in with their email). They're separate on purpose: fix a name or add a last name (**Matthew** to **Matthew Smith**) and their login stays the same. Only change the **Username** box on **Edit** if they should log in with something new, and tell them when you do.
 
 ### Adding someone
-**Home → Users → + New.** Fill in their **Name**, a **Username** (what they log in with), their **Email** (optional), their **Role** (it starts on **User**, the least access, so making someone an Admin is always on purpose) and their **Group**. Then pick **How will they sign in?**
+**Org settings → Users → + New.** Fill in their **Name**, a **Username** (what they log in with), their **Email** (optional), their **Role** (it starts on **User**, the least access, so making someone an Admin is always on purpose) and their **Group**. Then pick **How will they sign in?**
 
 - **Send an invite** (the usual way): no password from you. After you save, an invite pops up with a **QR code** and a **Copy link** button, and if they have an email, it's emailed to them too. They open it, check their name and username (you can leave the username blank and let them pick), choose a password, and they're in. The invite works once and lasts **7 days**. Making a new one cancels the old one.
 - **I'll set their password:** a password box shows. Type one and tell them yourself.
@@ -233,26 +261,36 @@ Open their user and tap **Sign out everywhere**. It asks first, then logs them o
 **Moved on to another asset?** Take them off the old one (**Assigned people**). They stop seeing it and can't file new work orders on it, but they still see the ones they already reported, so they can check how those turned out. <!-- for: fleet -->
 **Tenant moved out?** Take them off the apartment (**Assigned people**). They stop seeing it and can't send new requests on it, but they still see the ones they already sent, so they can check how those turned out. <!-- for: landlord -->
 
+### Labor rates (pay)
+Only if your company tracks labor (**Labor tracking** in **Settings for your whole company**), and only for people allowed to see labor rates.
+
+**Org settings → Users → the person → Labor rate → Set rate.** Dollars an hour, for job costing (not payroll: no overtime, no taxes).
+- **Time already logged keeps the rate it was logged at.** A raise doesn't change last year's jobs.
+- **Time logged before they had a rate** picks up the rate when you set one.
+- Nobody sees anyone's rate, or what labor cost, without **Labor rates** in their groups. Not even their own. Give it only to the people who handle pay.
+
+*Why it's locked down:* a job's cost minus its parts is its labor, and labor divided by hours is a wage. So without **Labor rates**, labor dollars are left out everywhere, totals included, not just the rate itself.
+
 ### Your account
-**Account menu → Account settings → Your details** has your **name**, **username** (what you log in with) and **email**. Change any of them and tap **Save**. Your email is where email alerts and password links go, so if you don't have one there, add it. <!-- for: all -->
+**Account menu → My settings → Your details** has your **name**, **username** (what you log in with) and **email**. Change any of them and tap **Save**. Your email is where email alerts and password links go, so if you don't have one there, add it.
 *Why you can change these yourself:* a typo in your name, a new email, a username you'd rather have. None of that should need someone else to fix it.
 
-**Account menu → Account settings → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there. Changing it logs you out on your other devices.
+**Account menu → My settings → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there. Changing it logs you out on your other devices.
 
 **Sign out everywhere** (same page) logs you out on every phone and computer, this one too. Use it if you lost a phone or logged in somewhere you shouldn't stay logged in.
 
-**Delete account** (the red button on the same page) asks if you're sure and for your password, and you can't log in again afterward. Your work orders and history stay with the company. **If you're your company's only Admin, deleting your account deletes the company too**: everyone in it loses access. FleetOptima warns you and makes you tick a box first. *Why:* a company with nobody in charge can't add people, change settings or fix anything. Make someone else an Admin first if the company should keep going without you.
+**Delete account** (the red button on the same page) asks if you're sure and for your password, and you can't log in again afterward. Your work orders and history stay with the company. **If you're your company's only Admin, deleting your account deletes the company too**: everyone in it loses access. FleetOptima warns you and makes you tick a box first. If you're on a paid plan, it also says when the plan stops ("Your plan stops on Dec 7. You won't be charged again."): it runs to the end of what you already paid for, and nothing more is charged. *Why:* a company with nobody in charge can't add people, change settings or fix anything. Make someone else an Admin first if the company should keep going without you.
 
 **Passwords** need at least 6 characters, with an uppercase letter, a lowercase letter, a number and a symbol.
 
 ### Email alerts
-**Account menu → App settings → Email alerts.** Your own switches; nobody else's change.
+**Account menu → My settings → Email alerts.** Your own switches; nobody else's change.
 - **New Work Orders**: **Off**, **Only urgent ones**, or **All of them**. Only for people who can work on jobs. Includes the ones maintenance makes on its own.
 - **Updates on what I reported**: an email when a work order you reported is **started**, **finished** or **cancelled** (not for notes).
 
 You **never get an email about something you did yourself.** Every alert has a **turn these off** link at the bottom that works without logging in.
 
-**No email on your account?** Then alerts have nowhere to go, and **Email alerts** says so at the top, with a link to **Account settings** to add one.
+**No email on your account?** Then alerts have nowhere to go, and **Email alerts** says so. Add one under **Your details** in **My settings**.
 
 Everything starts **off** for fleets: turn on what you want. <!-- for: fleet -->
 For landlords, **New Maintenance Requests** starts **on** (all of them). Tenants can turn on **Updates on what I reported** to hear when someone's on it. <!-- for: landlord -->
@@ -284,7 +322,7 @@ Every company starts with these three. Change them, rename them, or make your ow
 | Group | Can |
 |---|---|
 | **Admin** | Everything. |
-| **Mechanic** | Assets, work orders and parts: view, add and edit (not delete). Pull and return parts, see costs, log readings. See what maintenance is due and say when it was done (not set up rules). |
+| **Mechanic** | Assets, work orders and parts: view, add and edit (not delete). Pull and return parts, see costs, log readings, log their own time on jobs (not see pay). See what maintenance is due and say when it was done (not set up rules). |
 | **Operator** | Report a problem (a new work order) on the machines they're assigned to, and log readings. Sees those machines and every work order on them, plus the ones they reported. No parts. |
 
 <!-- for: landlord -->
@@ -325,6 +363,8 @@ You only see the buttons you can use. Without Delete there's no Delete button; w
 | **Assets** | The properties, their history and maintenance. (See **What people see**.) | <!-- for: landlord -->
 | **Work Orders** | Jobs, their notes, starting and completing them. (See **What people see**.) |
 | **Outside services** | Adding the work someone outside did on a job, and what it cost. |
+| **Labor (time on jobs)** | Seeing the time on jobs (View), logging and fixing your **own** time (Add), and logging or fixing **anyone's** (Edit). Hours only, never dollars. |
+| **Labor rates (pay)** | Seeing people's hourly rates and what labor cost, anywhere (View), and setting rates (Edit). Keep it to the people who handle pay. |
 | **Parts** | The parts list, restocking, counting, setting a batch's cost. |
 | **Pulling & returning parts** | Taking parts for a job (or Use or toss), and putting them back. |
 | **Costs** | Seeing prices and what jobs cost. **Without it, prices are blank everywhere**: parts, batches, a job's totals. With it but without View on Assets, only the costs of the assets they can see. |
@@ -334,8 +374,8 @@ You only see the buttons you can use. Without Delete there's no Delete button; w
 | **Asset Types** | Adding measuring units (miles, hours...). The types themselves come built in. | <!-- for: fleet -->
 | **Users** | People: adding, changing, removing, and their groups. |
 | **Groups** | Making and changing groups. |
-| **Settings** | **Org settings** in the account menu (Features, and VIN settings). | <!-- for: fleet -->
-| **Settings** | **Org settings** in the account menu (Features). | <!-- for: landlord -->
+| **Settings** | **Features**, **VIN settings** and **Billing & plan** in **Org settings**. | <!-- for: fleet -->
+| **Settings** | **Features** and **Billing & plan** in **Org settings**. | <!-- for: landlord -->
 
 A row only shows if your company uses it: switch off **Parts inventory** (see **Settings for your whole company**) and the Parts rows go away for everyone.
 
@@ -358,11 +398,24 @@ Want one person to also delete something, without making a whole new group? On t
 *Why:* so you don't end up with a group called "Pops Special Access" for every exception.
 
 ### Changing a group
-**Home → Groups** lists each group, how many people are in it, and what it can do in plain words.
+**Org settings → Groups** lists each group, how many people are in it, and what it can do in plain words.
 - Tap one to change its boxes or rename it, then **Save**. Everyone in it gets the change right away.
 - **+ New** makes a group (like "Lead Mechanics": put your leads in both Mechanic and Lead Mechanics). <!-- for: fleet -->
 - **+ New** makes a group (like "Plumbers": people who only see the requests on the buildings they're assigned to). <!-- for: landlord -->
 - **Delete this group** asks first and tells you how many people lose what it gives. Their other groups stay.
+
+### Who can do what
+**Org settings → Who can do what** answers "who can delete assets?" and *why*. Every action is listed by area (**Assets: Delete**, **Parts: Add**...) with how many people can do it. Tap one to see who:
+- **Admins (always)**: Admins can do everything.
+- **Through a group**: "Mark (via Mechanic)". <!-- for: fleet -->
+- **Through a group**: "Mark (via Maintenance)". <!-- for: landlord -->
+- **Set on the person**: their own extras (see **Extra powers for one person**).
+
+Someone who gets it both ways shows in both places (and counts once), so you can spot a power you gave twice. On Assets and Work Orders, someone without View is marked **only their own** (see **View, Add, Edit, Delete**).
+
+It only shows; it never changes anything. To change what someone can do, open them in **Users**, or their group in **Groups**. You need View on both **Users** and **Groups** to see it.
+
+*Why read-only:* each power has one place it's set. A second place to change it would make it harder to tell where something came from.
 
 ### The safety rules
 - **Every company keeps at least one Admin.** You can't remove or demote the last one.
@@ -434,9 +487,25 @@ When someone outside your company does the work, log it on the job: **Services �
 
 Turn this off if nobody outside ever works on your things: **Settings for your whole company → Service tracking**.
 
+### Labor (time on a job)
+Only if your company tracks labor (**Labor tracking** in **Settings for your whole company**). <!-- for: fleet -->
+Only if your company tracks labor (**Labor tracking** in **Settings for your whole company**). It starts off for landlords: turn it on if your own people do the fixing and you want their time on each request. <!-- for: landlord -->
+
+**The job → Labor → Add time.** Roll the wheel to the hours and minutes (it starts at 1 hour), and **Save**. It's logged as of when you save it.
+- **Who** starts on **Me**. People allowed to log anyone's time (Edit on **Labor**) can pick someone else, like the mechanic who's still under the truck. <!-- for: fleet -->
+- **Who** starts on **Me**. People allowed to log anyone's time (Edit on **Labor**) can pick someone else. <!-- for: landlord -->
+- **Edit** fixes a line's time; **Remove** takes it off (it asks first). You can fix your own lines; Edit on **Labor** fixes anyone's. The job's history keeps a note of every change.
+- One line is between 1 minute and 24 hours. Worked longer? Add another line.
+- The **Labor** section shows each line and the **Labor total** in hours. Dollars show only for people allowed to see labor rates (see **Labor rates (pay)** under **People**).
+
+*Why hours for everyone and dollars for few:* the crew should see how long jobs take. What someone is paid is between them and whoever handles pay.
+
 ### Parts on a job
 Only if your company keeps parts (**Parts inventory** in **Settings for your whole company**).
-- **Pull part** opens a search. Type a name, a part number or a barcode, or tap the **scan** button and point the camera at the box. Pick the part, then say how many.
+- **Pull part** opens a search. Type a name, a part number or a barcode, or tap the **scan** button and point the camera at the box. Pick the part:
+  - **A part you count one by one** (a filter, a belt) pulls **1** right away, and the bar at the bottom says **Pulled 1 × ...** with **Undo**. Need another? Pull it again. <!-- for: fleet -->
+  - **A part you count one by one** (a filter, a valve) pulls **1** right away, and the bar at the bottom says **Pulled 1 × ...** with **Undo**. Need another? Pull it again. <!-- for: landlord -->
+  - **A part you measure** (quarts, gallons, feet) asks **how many**.
 - **Not in the system yet?** Type its name and tap **Add "..." as a new part** (or scan a box nobody has scanned before). Fill in what it's measured in, how many you have and what each cost, and you're straight back to pulling it. You never leave the job.
 - Parts leave stock **right away**, so two people can't grab the same last filter. If there isn't enough on the shelf, the app tells you how many are there.
 - The **Parts** section shows how much of each part the job has and what it cost, plus the **parts total** for the job. Measured parts say their unit (**4 qt Castrol 5W-30**); parts counted one by one say **2 x FRAM PH3614**.
@@ -447,7 +516,7 @@ Only if your company keeps parts (**Parts inventory** in **Settings for your who
 Tap the **⋯** next to the job's status, then **Cancel job**. When you cancel a job that still has parts out, the app lists them under **Back on shelf**, all ticked, because a cancelled job usually didn't happen. **Untick anything that got used up** (oil already poured in, a part that turned out to be defective); it stays charged to the job. A cancelled job can still have a cost.
 
 ### Details (a job's notes and history)
-Every work order keeps a list of what happened, oldest first: reported, started, parts pulled, services added, urgent or not, edited, completed or cancelled, plus any notes.
+Every work order keeps a list of what happened, oldest first: reported, started, parts pulled, services added, labor logged or changed, urgent or not, edited, completed or cancelled, plus any notes.
 - Each record shows **who** did it and when.
 - **Add note** adds your own note (just type it).
 - **Details can't be deleted or edited.** If something was wrong, add a note that corrects it. That keeps the history trustworthy.
@@ -466,7 +535,7 @@ A maintenance rule is something that needs doing on a schedule: "**Change the AC
 - **Job**: what the request will be called ("Change the AC filter", "Test the smoke detectors"). <!-- for: landlord -->
 - **Every how many** miles or hours (the asset's own unit), and/or **every** so many days, weeks, months or years. Fill in one or both. With both, **whichever comes first** wins: a timing belt at 5 years or 70,000 miles is due at 5 years even if the truck only did 20,000. <!-- for: fleet -->
 - **Every** so many days, weeks, months or years. <!-- for: landlord -->
-- An asset with no meter (a place, a trailer) only asks for the time. <!-- for: fleet -->
+- An asset with no meter (a place, a trailer, a small tool) only asks for the time. <!-- for: fleet -->
 - **Apply to**: who gets it, with how many each choice covers right now: **All Trucks (12)**, **All Ford F-150 Trucks (6)**, **Just Truck 12**. It starts on the narrowest group, not the whole fleet. <!-- for: fleet -->
 - **Apply to**: **Just Apt 1A**, or **All Properties** (with how many that covers right now). It starts on just this one. <!-- for: landlord -->
 
@@ -534,11 +603,12 @@ A rule counts in **one unit**: a rule in miles only covers assets measured in mi
 
 ## Costs
 
-**Home → Costs** (if you're allowed to see prices). What your jobs cost, **parts and outside services together**:
+**Home → Costs** (if you're allowed to see prices). What your jobs cost, **parts, outside services and labor together**:
 - Pick a range: **1, 3 or 6 months**, or **Custom** (a number of days, months or years).
 - The **total**, and a **bar for each month**.
 - **Costing the most**: assets, with their **cost per mile or hour**. Tap one to see just that asset. <!-- for: fleet -->
 - **Costing the most**: properties. Tap one to see just that property. <!-- for: landlord -->
+- **Shop time**: hours of labor on each asset, and how much per use (**2.5 h per 1,000 mi**, **4.0 h per 100 hr**). The one that eats your shop time stands out, even when its parts were cheap. <!-- for: fleet -->
 - **Paid the most**: who you paid for outside services, and for how many jobs.
 - **Missing a cost: find the receipt**: services added without a cost yet.
 - **Used up the most**: parts, with how much was used. Tap one to open the part. <!-- for: fleet -->
@@ -548,8 +618,9 @@ Each asset's page has the same thing for that asset under **Costs** (last 6 mont
 
 If you can see costs but not every asset, you see the costs of the assets you can see.
 
-**Not counted yet:** your own people's time, and fuel. <!-- for: fleet -->
-**Not counted yet:** your own people's time. <!-- for: landlord -->
+**Labor** (if your company tracks it) is in the dollars only for people allowed to see labor rates. Everyone else sees the parts and services total with the time next to it (**+ 6h 30m of labor**), so nobody can work out a wage. Someone with time logged but no rate yet is named under the total (**Labor rate not set: ...**): their time isn't in the dollars until you set their rate (see **Labor rates (pay)**).
+
+**Not counted yet:** fuel. <!-- for: fleet -->
 
 Don't need costs at all? Turn off **Cost tracking** (see **Settings for your whole company**).
 
@@ -557,15 +628,26 @@ Don't need costs at all? Turn off **Cost tracking** (see **Settings for your who
 
 ## Settings for your whole company
 
+**Account menu → Org settings.** Everything about your company in one place. You only see what your groups let you use:
+- **Users** and **Groups**: your people and what they can do (see **People** and **Groups and permissions**).
+- **Who can do what**: who can do each thing, and why (see **Groups and permissions**).
+- **Features**: turn off what your company doesn't use (below).
+- **VIN settings**: what a VIN lookup puts on the form (see **Assets**). <!-- for: fleet -->
+- **Billing & plan**: your trial or plan (see **Billing and your plan**).
+
 ### Features
 **Account menu → Org settings → Features** (Admins, or anyone allowed to change Settings). Turn off what your company doesn't use:
 - **Parts inventory**: parts, stock, and pulling parts onto jobs. Off if you don't keep parts on the shelf.
 - **Service tracking**: outside work on a job (a plumber, a tire shop) and what it cost.
+- **Labor tracking**: time people spend on jobs, and what that time cost. Off if you don't track time. Its rates go with it. <!-- for: fleet -->
+- **Labor tracking**: time your own people spend on requests, and what it cost. Starts off: turn it on if your own people do the work and you want their time tracked. <!-- for: landlord -->
 - **Cost tracking**: what everything costs, and the Costs page. Off if you only need to know what needs fixing.
 
 **Off means gone for everyone** in your company: the Home tile, that part of a job, the row on the permissions page. **Nothing is deleted.** Turn it back on and everything is exactly as it was, including who was allowed to do what.
 
 *Why:* a feature you don't use is just one more thing to scroll past.
+
+**Skipped parts or labor in Getting started** and said yes to turning it off? This is where it went. Flip it back on any time.
 
 Some things aren't a switch you can flip yourself, because your company isn't set up for them. Ask us if you need one.
 
@@ -586,6 +668,7 @@ On **Billing & plan**, pick how many properties you want to pay for with **−**
 
 - You can't pick fewer than the assets you already have. To pay for fewer, retire (delete) the ones you don't use first, then come back. Nothing is ever deleted for you.
 - Your card number goes to Stripe, never to FleetOptima.
+- **Got a discount from us?** Billing & plan shows it (**Discount: ...**). If you haven't picked a plan yet, it says **(starts with your first bill)**: it's already on your account and comes off when you pick one.
 
 ### Changing it later
 - **More assets:** tap **+** and **Add to my plan**. Before anything happens, a box shows **exactly what it charges your card now** (just the rest of this month on the extra ones) and the new monthly amount after. Tap **Charge $...** to go ahead, or **Cancel**. If the card doesn't go through, nothing changes.
@@ -598,13 +681,23 @@ On **Billing & plan**, pick how many properties you want to pay for with **−**
 You'll see **"Your last payment didn't go through. Update your card by (date)"** on Home. FleetOptima **keeps working** until that date while the card is retried (about two weeks). Update the card under **Card, invoices or cancel** before then. If it still hasn't gone through by the date, the plan is canceled and FleetOptima goes **read-only** (see below) until a plan is picked again.
 
 ### Read-only
-If the trial ends without a plan, or the plan is canceled, FleetOptima goes **read-only**: everything is still there and you can look at all of it, but nothing can be added, changed or deleted. You'll see **"FleetOptima is read-only right now"** if you try. Pick a plan (or email us) and it all opens back up right away. Nothing is lost.
+If the trial ends without a plan, or the plan is canceled, FleetOptima goes **read-only**: everything is still there and you can look at all of it, but nothing can be added, changed or deleted (people and photo reading included). Sending us feedback still works. You'll see **"FleetOptima is read-only right now"** if you try. Pick a plan (or email us) and it all opens back up right away. Nothing is lost.
 
 ## Parts and stock
 Only if your company keeps parts: **Parts inventory** in **Settings for your whole company**.
 
 ### Quantities
-Quantities can be decimals: **4.5 quarts** of oil is fine. Each part has a **measuring unit** (quarts, units, gallons...). A part must have one, and if it's missing the app tells you to pick one.
+Quantities can be decimals: **4.5 quarts** of oil is fine. Each part has a **Unit** (quarts, each, gallons...). A part must have one, and if it's missing the app tells you to pick one.
+
+### Running low
+Give a part a **Reorder at** amount (on New Part or Edit) and FleetOptima tells you when you're down to it:
+- **On Home**, under Maintenance: **Running low** lists parts at or below their Reorder at amount, in **orange**, or **red** at zero.
+- **In the Parts list**, the **Low** filter shows just those, tagged **LOW** or **OUT**.
+- **The x** on Home hides one until its count changes (just for you; **Undo** brings it back). Restock it or count it, and it's back if it's still low.
+- Don't want the section on your Home at all? **My settings → Running low on Home**.
+- **Reorder at** left blank means never.
+
+It never emails anyone. *Why:* running out of the filter you need is a wasted trip. A list you see when you open the app is enough; nobody needs another email.
 
 ### Barcode
 Optional. It's the code on the box (UPC). Some shops use it as their part number, so when you search by code, FleetOptima checks **both** the barcode and the part number.
@@ -647,7 +740,7 @@ The **part number** field has a **camera** button. Use it when there's no barcod
 
 **Mileage / hours** only picks whole numbers of 3 digits or more (with a decimal for hour meters), so the speedometer's "60" or a trip meter label won't be guessed. <!-- for: fleet -->
 
-Nothing saves until you tap Save on the form, and the photo itself isn't kept. Tips: hold steady and avoid glare. You can hold your phone upright or turned on its side, whichever fits what you're reading.
+Nothing saves until you tap Save on the form, and the photo itself isn't kept. Each person can read up to 100 photos a day, far more than anyone needs. Tips: hold steady and avoid glare. You can hold your phone upright or turned on its side, whichever fits what you're reading.
 
 ### When nobody knows what it cost
 A jug that was already on the shelf, a box from who-knows-when: leave **Cost each** blank instead of guessing. The stock is saved and usable, but marked **Cost needed**: on the part's Stock list, on its History, and on any job that used it ("+ cost needed on some" after the parts total).
@@ -676,6 +769,7 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "You don't have access to this page." | Your groups don't include this page. Ask your Admin (see **Groups and permissions**). |
 | "...is turned off for your organization." | Your company switched that feature off. An Admin can turn it back on in **Org settings → Features**. |
 | "Wrong username or password." | Check both and try again. Ten wrong tries in a row locks the account for 15 minutes. |
+| "Too many tries. Wait a minute and try again." | A lot of tries in a short time. Give it a minute. |
 | "Error 108: Too many wrong passwords..." | Ten wrong tries in a row. Wait 15 minutes, or ask your Admin. |
 | "That link has expired or was already used." | Invite and reset links work once and run out. Ask for a new one (or use **Forgot password**). |
 | "That password isn't strong enough." | At least 6 characters, with an uppercase letter, a lowercase letter, a number and a symbol. |
@@ -691,6 +785,12 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "Error 215: A group with this name already exists." | Pick another name. |
 | "Error 216: Only an admin can change an admin." | Ask an Admin. |
 | "That doesn't exist anymore." | Someone deleted it. |
+| "Give it a title." | A work order needs a title. |
+| "Change your own password from My settings > Change password..." | Your own password changes there (it asks for your current one), not on **Users**. |
+| "Labor time is between 1 minute and 24 hours." | One line can't be longer than a day. Add another line for more. |
+| "A labor rate is dollars an hour, from 0 to 10,000." | Type the hourly rate in dollars. |
+| "Small tools don't have a meter, so their maintenance goes by time..." | Pick days, weeks, months or years for a small tool's rule. | <!-- for: fleet -->
+| "We couldn't stop the plan with the payment company, so nothing was deleted..." | Deleting the company has to stop its plan first, and the payment company didn't answer. Try again in a minute, or email us. |
 | "Not found" | It was deleted, or it isn't yours to see (an asset you're not assigned to, say). |
 | "FleetOptima is read-only right now..." | Your company's trial is over or its plan was canceled. An Admin can pick a plan under **Org settings → Billing & plan** (see **Billing and your plan**). |
 | "Payments aren't set up yet. Email us..." | Tap **Email us** and we'll set your plan up for you. |
