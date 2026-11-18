@@ -82,8 +82,8 @@ FleetOptima runs in your web browser, but you can **install it like an app**: it
 ### The top bar
 - The **?** opens this guide at the part about the page you're on.
 - The **megaphone** sends us feedback (see below).
-- **Your initial** in a circle opens the **account menu**: your name and role, **My settings**, **Org settings** (if there's anything in it you can use), **Help**, the **Privacy Policy** and **Terms of Service**, and **Log out**.
-- **My settings** is everything about *you*: your details, your password, sign out everywhere, delete your account, the look (light, dark, or whatever your phone or computer is set to), your own **Email alerts**, and whether **Running low** shows on your Home. See **Your account** below.
+- **Your initial** in a circle opens the **account menu**: your name and role, **My settings**, **Org settings** (if there's anything in it you can use), **Help**, and **Log out**. The **Privacy Policy** and **Terms of Service** are small links at the bottom of **Help**.
+- **My settings** is everything about *you*: the look (light, dark, or whatever your phone or computer is set to), your own **Email alerts**, and whether **Running low** shows on your Home, then, at the bottom, your account: your details, your password, sign out everywhere, and delete your account. See **Your account** below.
 - **Org settings** is everything about *your company*: **Users**, **Groups**, **Who can do what**, **Features**, **VIN settings** and **Billing & plan**. You only see the ones you're allowed to use. See **Settings for your whole company**. <!-- for: fleet -->
 - **Org settings** is everything about *your company*: **Users**, **Groups**, **Who can do what**, **Features** and **Billing & plan**. You only see the ones you're allowed to use. See **Settings for your whole company**. <!-- for: landlord -->
 
@@ -124,13 +124,17 @@ An asset is one vehicle or piece of equipment: "Truck 12," "the Bobcat." <!-- fo
 A property is one place you look after: "Apt 1A," "the duplex on Elm," "the laundry room." <!-- for: landlord -->
 
 ### The list
-Each row has a small **icon for its type** (a truck, equipment, a tool), its name, and under it **the type and its reading** ("Vehicle · 104,920 miles"). Anything without a meter just shows its type. The VIN is on the asset's own page. <!-- for: fleet -->
-Each row has a small **icon** (a house), its name, and under it its type. <!-- for: landlord -->
+Each row has a small **icon for its type** (a truck, equipment, a tool), its name, then **what it is** ("2019 · Ford · F-250"), then **the type and its reading** ("Vehicle · 104,920 miles"). Anything without a year, make or model shows its VIN or serial number instead, and anything without a meter just shows its type. <!-- for: fleet -->
+Each row has a small **icon** (a house), its name, its **address**, and its type. <!-- for: landlord -->
+
+**Search finds the make and model too**, so "venza" or "f-250" finds it, and the last few digits of a VIN or serial number find it even though they aren't on the row. <!-- for: fleet -->
 
 A **dot** on the icon means it needs something:
 - **Red**: maintenance is **due**, or it has an **urgent** job nobody has finished.
 - **Amber**: maintenance is **coming up**, or it has an **open** job.
 - **No dot**: nothing waiting.
+
+The red ones are always at the **top** of the list, then the amber ones, then the rest. Under the search box, **Due**, **Coming up** and **Open job** show just those.
 
 You only get dots for what you're allowed to see: someone who can't see maintenance only gets dots for jobs.
 
@@ -152,10 +156,11 @@ No nickname? It shows as **Unnamed property**, which is your hint to give it one
 *Why nicknames:* nobody says "12 Elm St, unit A, rear." They say "Apt 1A." The app should talk the way you do. <!-- for: landlord -->
 
 ### The asset's page
-Open an asset and the **essentials** are on top: name, type, reading, and **Added by** (who put it in FleetOptima). Under them are **headers you tap to slide open**: <!-- for: fleet -->
-Open a property and the **essentials** are on top: name, address, and **Added by** (who put it in FleetOptima). Under them are **headers you tap to slide open**: <!-- for: landlord -->
+Open an asset and what **identifies** it is on top: year, make, model, its VIN or serial number, and its reading. Under them are **headers you tap to slide open**: <!-- for: fleet -->
+Open a property and what **identifies** it is on top: its name and address. Under them are **headers you tap to slide open**: <!-- for: landlord -->
+- **More details**: everything else about it, like its type and who added it. <!-- for: landlord -->
+- **More details**: everything else about it, like its type and who added it. Inside it, one more tap opens **From the VIN**: everything the VIN lookup found (see below). <!-- for: fleet -->
 - **Assigned people**: who uses it (see **Who uses it** below).
-- **More details**: everything else saved on it (the rest of the VIN lookup, see below). <!-- for: fleet -->
 - **Maintenance**: its maintenance rules, and what's coming up or due (see **Maintenance**).
 - **Work orders**: this asset's jobs, newest first. Tap one to open it.
 - **Readings**: its current miles or hours, and **Log reading**. <!-- for: fleet -->
@@ -202,9 +207,9 @@ Enter the VIN any of three ways:
 - **Scan the barcode** (barcode button in the field) on the VIN sticker. That sticker is usually on the front door jamb. Work vans and trucks tend to have one; many cars don't.
 - **Read it off a photo** (camera button) of the VIN plate at the bottom of the windshield. See *Reading it off a photo* below.
 
-Once there's a VIN that passes its **check digit** (a built-in math check every North American VIN has), FleetOptima looks it up with **NHTSA**, the US government's vehicle database, and fills in the make, model, year and more. **VIN settings** (Org settings) decide which of those details sit on the form; the rest go into **More details**, so nothing is thrown away. Anything you already typed is never overwritten. It's the number that decides, not the asset type: a trailer with a VIN gets looked up too.
+Once there's a VIN that passes its **check digit** (a built-in math check every North American VIN has), FleetOptima looks it up with **NHTSA**, the US government's vehicle database, and fills in the make, model, year and more. **VIN settings** (Org settings) decide which of those details sit on the form; the rest go into **More details** on the form, so nothing is thrown away. Anything you already typed is never overwritten. It's the number that decides, not the asset type: a trailer with a VIN gets looked up too.
 
-**More details** holds everything else the VIN lookup found (engine, body style, plant...). You can edit any of it, and your edits stick: looking the VIN up again doesn't overwrite them. *Why keep it all:* you don't need engine size today, but the day you're ordering a part, it's already there.
+On the asset's page, everything the VIN lookup found (engine, body style, plant...) is in **More details → From the VIN**, the ones your VIN settings turned on first. Where you changed a value, the lookup's own value shows under it, marked **(raw)**. You can edit any of it (on **Edit**), and your edits stick: looking the VIN up again doesn't overwrite them. *Why keep it all:* you don't need engine size today, but the day you're ordering a part, it's already there. *Why one more tap:* a lookup returns dozens of rows, and they shouldn't bury the few you look at every day.
 
 A VIN that fails the check digit doesn't look anything up. Compare it with the plate. Serial numbers are saved as typed.
 
@@ -272,7 +277,7 @@ Only if your company tracks labor (**Labor tracking** in **Settings for your who
 *Why it's locked down:* a job's cost minus its parts is its labor, and labor divided by hours is a wage. So without **Labor rates**, labor dollars are left out everywhere, totals included, not just the rate itself.
 
 ### Your account
-**Account menu → My settings → Your details** has your **name**, **username** (what you log in with) and **email**. Change any of them and tap **Save**. Your email is where email alerts and password links go, so if you don't have one there, add it.
+**Account menu → My settings → Your details** (near the bottom) has your **name**, **username** (what you log in with) and **email**. Tap **Edit** to change them, then **Save** (or **Cancel**). *Why the Edit button:* so nobody changes their username by accident while scrolling. Your email is where email alerts and password links go, so if you don't have one there, add it.
 *Why you can change these yourself:* a typo in your name, a new email, a username you'd rather have. None of that should need someone else to fix it.
 
 **Account menu → My settings → Change password.** Type your current password, then the new one twice. Forgot the current one? There's a link to **Forgot password** right there. Changing it logs you out on your other devices.
@@ -300,7 +305,7 @@ For landlords, **New Maintenance Requests** starts **on** (all of them). Tenants
 
 <!-- for: fleet -->
 ### VIN settings
-**Account menu → Org settings → VIN settings.** Tick which details from a VIN lookup sit on the asset form. The ones that are on are listed first; the rest (there are over a hundred) are under **More fields**. Anything left off still goes into **More details**, so nothing is lost. *Why:* a VIN lookup returns a lot. A plumbing company might care about towing capacity and never about airbags. Keep the form to what *your* people actually look at.
+**Account menu → Org settings → VIN settings.** Tick which details from a VIN lookup sit on the asset form. The ones that are on are listed first; the rest (there are over a hundred) are under **More fields**. Anything left off still goes into **More details** (on an asset's page, **More details → From the VIN**), so nothing is lost. *Why:* a VIN lookup returns a lot. A plumbing company might care about towing capacity and never about airbags. Keep the form to what *your* people actually look at.
 
 ## Groups and permissions
 What each person can see and do comes from their **groups**. A group is a set of things people can do, like "Mechanic" or "Operator". Put someone in a group and they can do what it allows. <!-- for: fleet -->
@@ -348,13 +353,16 @@ Everything else follows from that. A work order on an asset they can't see doesn
 ### View, Add, Edit, Delete
 Each thing in FleetOptima (assets, work orders, parts...) has four boxes, from least to most power:
 - **View**: see the list and open things.
-- **Add**: make new ones. With **Add without View** they still see what *they* added. That's how an Operator reports problems and checks on their own reports without seeing everyone else's.
+- **Add**: make new ones. With **Add without View** they still see what *they* added. That's on purpose: it's how an Operator reports problems and checks on their own reports without seeing everyone else's. The grid says so under the row ("Without View: sees only what they add").
 - **Edit**: change them. For work orders, that includes starting and completing a job.
 - **Delete**: remove them.
 
-**On Assets and Work Orders, Edit and Delete work without View**, on the same ones they can see: someone with Edit on Work Orders but no View can start and finish the jobs on their own assets, and nothing else. The permissions page says so under those rows. **Everywhere else, Edit and Delete need View:** they stay greyed out until View is on, and turning View off clears them. *Why:* you can't fix what you can't see.
+**On Assets and Work Orders, Edit and Delete work without View**, on the same ones they can see: someone with Edit on Work Orders but no View can start and finish the jobs on their own assets, and nothing else. The permissions page says so under those rows. **Everywhere else, Edit and Delete need View:** they stay faded until View is on (tap one and it says so), and turning View off clears them. *Why:* you can't fix what you can't see.
 
 You only see the buttons you can use. Without Delete there's no Delete button; without Edit on work orders there's no Start or Complete.
+
+### Reading the grid
+The boxes sit in four sections: **Assets**, **Jobs**, **Parts & money** and **People & setup**. Each section is a header you tap to open, and while it's closed it tells you what's inside ("Full access", "View only", "None"). Inside, every row has the same four columns, **View, Add, Edit, Delete**, so "who can delete?" is one look down a column. A **·** means that action doesn't exist for that row (there's nothing to delete about Costs). A **solid** box is on; an **empty** one is off.
 
 ### What each row covers
 | Row | What it unlocks |
@@ -383,37 +391,44 @@ A brand-new feature starts **off** for everyone but Admins, until you tick it fo
 
 ### Putting someone in a group
 **Users → the person → Groups & permissions.**
-- Their groups show as **chips** (`MECHANIC ×`). Tap the **×** to take them out of one, or **Add group** to put them in another. <!-- for: fleet -->
-- Their groups show as **chips** (`TENANT ×`). Tap the **×** to take them out of one, or **Add group** to put them in another. <!-- for: landlord -->
+- Their groups show as **chips** (`MECHANIC ×`). Tap the **×** to take them out of one, or **Add group** to put them in another. Someone can be in as many groups as you like. <!-- for: fleet -->
+- Their groups show as **chips** (`TENANT ×`). Tap the **×** to take them out of one, or **Add group** to put them in another. Someone can be in as many groups as you like. <!-- for: landlord -->
+- Taking them out of a group says what it cost: "Removed from Mechanic. Lost 3, kept 9 through Crew Lead." **Kept** means another of their groups gives it too, so they still have it. The grid below shows which boxes; the lost ones flash. <!-- for: fleet -->
+- Taking them out of a group says what it cost: "Removed from Maintenance. Lost 3, kept 2 through Plumbers." **Kept** means another of their groups gives it too, so they still have it. The grid below shows which boxes; the lost ones flash. <!-- for: landlord -->
 - Tap **Save**. It takes effect right away.
 
 Making someone **an Admin** (their role, on Edit) adds the Admin chip too, so what you see matches what they can do.
 
-### Extra powers for one person (Advanced)
-Want one person to also delete something, without making a whole new group? On their **Groups & permissions** page, open **Advanced permissions** and tick it for just them.
-- Boxes their groups already give are **checked and greyed out**. Hold one to see which group gives it ("Granted by Mechanic"). <!-- for: fleet -->
-- Boxes their groups already give are **checked and greyed out**. Hold one to see which group gives it ("Granted by Maintenance"). <!-- for: landlord -->
-- To take away a greyed box, take them out of that group, or change the group.
+### Extra powers for one person
+Want one person to also delete something, without making a whole new group? On their **Groups & permissions** page, **What they can do** shows everything they can do. Tick it there, for just them.
+- Boxes their groups give are **outlined** (a check in an empty box). Tap one to see which group gives it ("From Mechanic, Crew Lead"). <!-- for: fleet -->
+- Boxes their groups give are **outlined** (a check in an empty box). Tap one to see which group gives it ("From Maintenance"). <!-- for: landlord -->
+- Boxes set just for them are **solid**.
+- To take away an outlined box, take them out of that group, or change the group.
 
 *Why:* so you don't end up with a group called "Pops Special Access" for every exception.
 
 ### Changing a group
-**Org settings → Groups** lists each group, how many people are in it, and what it can do in plain words.
-- Tap one to change its boxes or rename it, then **Save**. Everyone in it gets the change right away.
+**Org settings → Groups** lists each group with one short line: how many people are in it and how much it can do ("2 people · Full access", "1 person · Edits 4 areas · Views 1"). Tap one to open it:
+- **People**: who's in it. Tap someone to open them. **Change** picks who's in it: tick or untick people and **Save**. Adding someone never takes them out of their other groups. Taking people out says what they kept through their other groups; for several at once, **See who** opens **Who can do what** for just them.
+- **What they can do**: the grid, locked so nothing changes by accident. Tap **Edit** to change the boxes right there, then **Save** (or **Cancel**). Everyone in it gets the change right away.
+- **Edit** at the top renames it.
 - **+ New** makes a group (like "Lead Mechanics": put your leads in both Mechanic and Lead Mechanics). <!-- for: fleet -->
 - **+ New** makes a group (like "Plumbers": people who only see the requests on the buildings they're assigned to). <!-- for: landlord -->
 - **Delete this group** asks first and tells you how many people lose what it gives. Their other groups stay.
 
 ### Who can do what
-**Org settings → Who can do what** answers "who can delete assets?" and *why*. Every action is listed by area (**Assets: Delete**, **Parts: Add**...) with how many people can do it. Tap one to see who:
-- **Admins (always)**: Admins can do everything.
-- **Through a group**: "Mark (via Mechanic)". <!-- for: fleet -->
-- **Through a group**: "Mark (via Maintenance)". <!-- for: landlord -->
+**Org settings → Who can do what** answers "who can delete assets?" and *why*. It uses the same sections as the grid: tap one open, and under each area every action (**View**, **Add**, **Edit**, **Delete**) shows how many people can do it. Tap an action to see who:
+- **Admins · always**: Admins can do everything.
+- **Through a group**: the person, with the group that gives it as a chip ("Mark  [Mechanic]"). <!-- for: fleet -->
+- **Through a group**: the person, with the group that gives it as a chip ("Mark  [Maintenance]"). <!-- for: landlord -->
 - **Set on the person**: their own extras (see **Extra powers for one person**).
 
-Someone who gets it both ways shows in both places (and counts once), so you can spot a power you gave twice. On Assets and Work Orders, someone without View is marked **only their own** (see **View, Add, Edit, Delete**).
+**Tap a name** to open that person's access, or **a group chip** to open the group. The **search box** opens whatever matches ("delete", "parts").
 
-It only shows; it never changes anything. To change what someone can do, open them in **Users**, or their group in **Groups**. You need View on both **Users** and **Groups** to see it.
+Someone who gets it both ways shows in both places (and counts once), so you can spot a power you gave twice. Someone with Add, Edit or Delete but not View is tagged **only their own**; tap the tag to see what that means (see **View, Add, Edit, Delete**).
+
+It never changes anything itself. To change what someone can do, tap their name, or their group. You need View on both **Users** and **Groups** to see it.
 
 *Why read-only:* each power has one place it's set. A second place to change it would make it harder to tell where something came from.
 
@@ -628,7 +643,7 @@ Don't need costs at all? Turn off **Cost tracking** (see **Settings for your who
 
 ## Settings for your whole company
 
-**Account menu → Org settings.** Everything about your company in one place. You only see what your groups let you use:
+**Account menu → Org settings.** Everything about your company in one place, in three groups (**People**, **How you work**, **Billing**). You only see what your groups let you use:
 - **Users** and **Groups**: your people and what they can do (see **People** and **Groups and permissions**).
 - **Who can do what**: who can do each thing, and why (see **Groups and permissions**).
 - **Features**: turn off what your company doesn't use (below).
@@ -691,7 +706,8 @@ Quantities can be decimals: **4.5 quarts** of oil is fine. Each part has a **Uni
 
 ### Running low
 Give a part a **Reorder at** amount (on New Part or Edit) and FleetOptima tells you when you're down to it:
-- **On Home**, under Maintenance: **Running low** lists parts at or below their Reorder at amount, in **orange**, or **red** at zero.
+- **On Home**, under Maintenance: **Running low** lists parts at or below their **Reorder at** amount, in **orange**, or **red** at zero.
+- **On the Parts tile** on Home, a number bubble says how many (like open jobs on **Work Orders**). It's not there when you've turned **Running low** off.
 - **In the Parts list**, the **Low** filter shows just those, tagged **LOW** or **OUT**.
 - **The x** on Home hides one until its count changes (just for you; **Undo** brings it back). Restock it or count it, and it's back if it's still low.
 - Don't want the section on your Home at all? **My settings → Running low on Home**.
@@ -776,7 +792,8 @@ Why not just put $0? Because $0 looks like a real price, and the owner's numbers
 | "Check your email: verify your address before logging in." | Open the link we emailed when you signed up. Tap **Resend** if you can't find it. |
 | "Your current password isn't right." | Type the password you log in with now (or use **Forgot password**). |
 | "This account was deleted." | That account was deleted. Your Admin can add you again. |
-| "Error 206: Can not add asset. Fleet size limit reached." | Your company is at its asset limit. Retire one you don't use, or get in touch for more. | <!-- for: fleet -->
+| "Your plan has no room for another asset." | Your company is at the number of assets it pays for. An Admin can make room in **Org settings → Billing & plan** (or, on a free plan, **Email us** there). Or retire one you don't use. | <!-- for: fleet -->
+| "Your plan has no room for another property." | Your company is at the number of properties it pays for. An Admin can make room in **Org settings → Billing & plan** (or, on a free plan, **Email us** there). | <!-- for: landlord -->
 | "Error 208: A user with this username already exists." | Usernames are unique. Pick another. |
 | "Error 219: An account with that email already exists." | That email is already on an account. Try **Forgot password**, or use another email. |
 | "Error 212: Every organization needs at least one admin." | That's the last Admin. Make someone else an Admin first. |
